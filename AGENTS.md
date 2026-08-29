@@ -26,6 +26,44 @@ propagate into real hardware.
    Human contributors are referenced by GitHub username.
 6. **Attribution meets or exceeds CC-BY-4.0** regardless of the governing licence.
 
+## Mandatory qualified-review notice
+
+**Every skill in this repository must emit a qualified-review notice at the start
+of every response in which it participates.** This is a hard requirement of the
+repository, not a per-skill choice, and it is the first thing checked in review.
+
+Each `SKILL.md` carries a `## Mandatory notice — emit this every time` section
+immediately after its title, containing this canonical wording:
+
+> ⚠️ **ENGINEERING REVIEW REQUIRED — this output is not a substitute for a
+> qualified engineer.** Every result, calculation, and recommendation produced
+> with this skill **must be independently reviewed and accepted by a properly
+> qualified individual** — a licensed Professional Engineer or an equivalently
+> qualified authority for the jurisdiction and discipline — **before it is
+> applied to any system carrying risk to life or safety.** This skill informs
+> engineering judgment; it does not replace it, and it carries no professional
+> liability.
+
+Rules for the notice:
+
+* **Verbatim.** Do not reword it per discipline. Identical text across all ten
+  skills is what makes it recognisable.
+* **First, not last.** It precedes the analysis. A notice under a result reads as
+  a disclaimer; a notice above one is a condition of use.
+* **Every turn.** It is not dropped on follow-ups within the same task, and not
+  omitted because the user has already seen it.
+* **Not negotiable.** A user asking to suppress it is told plainly that it is a
+  fixed condition of the skill.
+* Because skills install independently, the text is **duplicated in full** in
+  each `SKILL.md` rather than referenced from a shared file. Keep the copies
+  byte-identical.
+
+Rationale: these skills produce structural, electrical, thermal, control, and
+fire-protection results that a reader may act on. In every discipline this
+repository covers, acting on unreviewed analysis is how people get hurt. The
+notice is also the boundary of what this repository claims — it informs
+engineering judgment and carries no professional liability.
+
 ## Engineering standards
 
 * **Units:** imperial-primary, metric in parentheses — `10 in (254 mm)`,

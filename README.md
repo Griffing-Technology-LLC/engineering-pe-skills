@@ -8,6 +8,20 @@ Each is aligned — where an alignment honestly exists — to an
 [NCEES PE discipline](https://ncees.org/exams/pe-exam/), and each cites its
 discipline's professional society and standards-developing organization.
 
+## Qualified review is required
+
+> ⚠️ **ENGINEERING REVIEW REQUIRED — output from these skills is not a substitute
+> for a qualified engineer.** Every result, calculation, and recommendation
+> produced with any skill in this repository **must be independently reviewed and
+> accepted by a properly qualified individual** — a licensed Professional Engineer
+> or an equivalently qualified authority for the jurisdiction and discipline —
+> **before it is applied to any system carrying risk to life or safety.** These
+> skills inform engineering judgment; they do not replace it, and they carry no
+> professional liability.
+
+Every skill emits this notice at the start of every response it contributes to.
+That behaviour is a fixed condition of the skills, not a configurable option.
+
 ## Design principles
 
 * **No fabricated references.** Every standard, section, and figure is catalogued
@@ -20,7 +34,8 @@ discipline's professional society and standards-developing organization.
   also tells you where it stops being true.
 * **Assumptions are labelled on every run**, so an assumed value never hardens
   into a fact by repetition.
-* **Real builds.** These skills assume the output gets fabricated, not filed.
+* **Real builds.** These skills assume the output gets fabricated, not filed —
+  which is exactly why the review notice above is mandatory and unconditional.
 
 ## Disciplines
 

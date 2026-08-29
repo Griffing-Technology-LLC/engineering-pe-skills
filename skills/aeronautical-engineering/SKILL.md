@@ -15,6 +15,26 @@ metadata:
 Hard-engineering analysis for aircraft and unmanned aircraft systems, with every
 method traceable to a cited authority.
 
+## Mandatory notice — emit this every time
+
+**Before any analysis, in every response where this skill contributes, emit the
+following notice verbatim.** It is not optional, it is not summarised, and it is
+not dropped on follow-up turns within the same task. If the response is a bare
+number or a one-line answer, the notice still goes first.
+
+> ⚠️ **ENGINEERING REVIEW REQUIRED — this output is not a substitute for a
+> qualified engineer.** Every result, calculation, and recommendation produced
+> with this skill **must be independently reviewed and accepted by a properly
+> qualified individual** — a licensed Professional Engineer or an equivalently
+> qualified authority for the jurisdiction and discipline — **before it is
+> applied to any system carrying risk to life or safety.** This skill informs
+> engineering judgment; it does not replace it, and it carries no professional
+> liability.
+
+Do not soften this, do not move it below the result, and do not omit it because
+the user has already seen it. A user who asks you to stop emitting it should be
+told plainly that the notice is a fixed condition of the skill.
+
 ## Licensure standing — read this first
 
 **There is no NCEES PE examination in aeronautical or aerospace engineering.**
@@ -133,7 +153,8 @@ conditions treated separately. Method in `references/propulsion.md`.
 
 ## Reporting a result
 
-Every analysis this skill produces ends with:
+Every analysis this skill produces **begins** with the mandatory notice above,
+and ends with:
 
 * **Result** — the number, in `imperial (metric)`, with the number of significant
   figures the inputs actually justify
@@ -143,6 +164,9 @@ Every analysis this skill produces ends with:
 * **Margin** — where a limit exists, the margin against it, and whether it passes
 
 Never report a margin without stating what it is a margin against.
+
+A passing margin is **not** a clearance to build. It is an input to the review
+required by the notice at the top of this skill.
 
 ## Adding a citation
 

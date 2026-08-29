@@ -43,6 +43,7 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
 * [ ] **1.6** — `PROJECT_INDEX.md` maintained as files are added
 * [ ] **1.7** — `CLAUDE-MEMORY.md` agent audit mirror
 * [ ] **1.8** — CI: markdownlint (all 60 rules) + link validation + secret scan
+  and a mandatory-notice presence check across every `SKILL.md`
 * [ ] **1.9** — Skill trigger-description evals per `skill-creator` §"Optimize
   description", 20 queries per skill, before publication
 
@@ -77,6 +78,11 @@ trigger evals.
 
 * [ ] **3.1** — Shared units/conversion convention documented once and referenced
   by every skill, rather than restated per skill
+* [x] **3.2a** — Canonical qualified-review notice defined in `AGENTS.md` and
+  implemented in `aeronautical-engineering`
+* [ ] **3.2b** — Propagate the byte-identical notice into the remaining nine
+  skills as each is authored; verify with a CI check that every `SKILL.md`
+  contains it *(gates 4.2)*
 * [ ] **3.2** — Consistent "report a result" block across all ten skills
 * [ ] **3.3** — Cross-discipline handoff guidance (e.g. aeronautical → materials
   for allowables; control systems → electronics for actuator drive)
