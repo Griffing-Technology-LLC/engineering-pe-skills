@@ -13,25 +13,37 @@ Open citation debts. **No skill may be published while it depends on an item in
 this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
 `REFERENCES.md`.
 
-* [ ] **0.1** — Verify ISA's documented role relative to the NCEES PE Control
-  Systems exam. The first URL tried returned HTTP 404. Locate the current ISA page
-  and record the exact wording, or record that ISA states no such role.
-  *(REF-SOC-003; blocks `control-systems-engineering`)*
+* [x] **0.1** — **RESOLVED 2026-08-29.** ISA's role located at
+  <https://www.isa.org/certification> and quoted verbatim in REF-SOC-003: ISA
+  "supports the Control Systems Engineer (CSE) License" and "offers training
+  courses and review materials." ISA does **not** claim to author or administer
+  the NCEES exam, and the repository does not say it does.
 * [ ] **0.2** — Verify individual ASTM F38 standard designations and years for UAS
   design and construction (F3298 and related). ASTM blocks automated retrieval;
   confirm by browser or through an institutional subscription.
   *(REF-ASTM-001; blocks `aeronautical-engineering` publication)*
-* [ ] **0.3** — Verify current 14 CFR Part 23 text for the factor-of-safety and
-  limit-load-factor paragraphs. The 2017 restructure moved numerical criteria into
-  consensus standards; the commonly quoted 1.5 FOS, n₁ = +3.8 / n₂ = −1.52,
-  and the design gust velocities are **unverified**, and are currently
-  marked as such in `references/loads-and-factors.md`.
-  *(REF-FAA-002; blocks `aeronautical-engineering` publication)*
+* [x] **0.3** — **RESOLVED 2026-08-29.** Part 23 read in full from the eCFR API
+  (title-14, issue date 2026-08-27). Findings, now in REF-FAA-002:
+  * **§23.2230(b) states the 1.5 factor of safety explicitly** — it is current
+    rule text. The earlier `REQUIRES VERIFICATION` mark was over-cautious and is
+    withdrawn; the correction is recorded in `REFERENCES.md`.
+  * The numeric manoeuvring load factors **+3.8 / −1.52 appear nowhere** in
+    current Part 23 (zero occurrences of either number). §23.2200(b) is
+    performance-based. The caution was correct for these.
+  * §23.2265 *Special factors of safety* and §23.2260(b) captured — both apply
+    directly to additively manufactured structure.
 * [ ] **0.4** — Confirm AIAA and AIChE URLs by browser (both return HTTP 403 to
   automated checks; content unconfirmed). *(REF-SOC-006, REF-SOC-007)*
 * [ ] **0.5** — Obtain and catalogue the NCEES exam specification PDF for each
   discipline, to ground each skill's scope in the published exam spec rather than
   the summary web page.
+* [ ] **0.6** — Confirm the current NCEES FE Reference Handbook version and its
+  published statics/dynamics section list. *(REF-NCEES-009;
+  `statics-and-dynamics` cites the handbook generally, no section by number)*
+* [ ] **0.7** — Confirm designations, editions, and years for the individual ISA
+  standards (ISA-5.1, ISA-84/IEC 61511, ISA-88, ISA-95, ISA/IEC 62443) before any
+  is cited by number. *(REF-ISA-001; `control-systems-engineering` currently
+  cites the series only as an index entry, with in-file cautions)*
 
 ## 1. Repository infrastructure
 
@@ -62,11 +74,37 @@ trigger evals.
     point, static margin
   * [x] 2.1.5 `references/propulsion.md` — momentum theory, propeller
     coefficients, EDF, thrust matching
-  * [ ] 2.1.6 Resolve §0.2 and §0.3 citation debts
-  * [ ] 2.1.7 Trigger evals
-* [ ] **2.2 Mechanical engineering** — three NCEES modules as reference files
-* [ ] **2.3 Statics and dynamics** — FE-level; grounded in NCEES FE Reference Handbook
-* [ ] **2.4 Control systems engineering** — ISA; blocked on §0.1
+  * [x] 2.1.6 §0.3 resolved; `loads-and-factors.md` rewritten against verified
+    §23.2200 / §23.2215 / §23.2230 / §23.2260 / §23.2265 text
+  * [ ] 2.1.7 §0.2 (ASTM F38) still open — does not block the other skills
+  * [ ] 2.1.8 Trigger evals
+* [~] **2.2 Mechanical engineering** — PE Mechanical, three modules
+  * [x] 2.2.1 `SKILL.md` — module table, practice rules, workflow
+  * [x] 2.2.2 `references/materials-and-fatigue.md` — stress state, $K_t$/$K_f$,
+    failure theories, fatigue, buckling, allowables, AM polymer
+  * [x] 2.2.3 `references/machine-elements.md` — shafts, bearings, gears,
+    springs, bolted joints, welds
+  * [x] 2.2.4 `references/thermal-and-fluids.md` — cycles, heat transfer,
+    fluids, pumps, HVAC
+  * [ ] 2.2.5 Trigger evals
+* [~] **2.3 Statics and dynamics** — FE-level [REF-NCEES-002]
+  * [x] 2.3.1 `SKILL.md` — examination standing, $g_c$ discipline, determinacy
+  * [x] 2.3.2 `references/statics.md` — equilibrium, reactions, trusses,
+    frames, distributed loads, friction
+  * [x] 2.3.3 `references/section-properties.md` — centroids, second moments,
+    parallel-axis, mass moments
+  * [x] 2.3.4 `references/dynamics.md` — kinematics, Newton-Euler, energy,
+    momentum, vibration
+  * [ ] 2.3.5 Trigger evals
+* [~] **2.4 Control systems engineering** — ISA; §0.1 resolved
+  * [x] 2.4.1 `SKILL.md` — ISA role quoted precisely, practice rules
+  * [x] 2.4.2 `references/loop-dynamics.md` — FOPDT, dead time, margins,
+    robustness
+  * [x] 2.4.3 `references/pid-and-tuning.md` — PID forms, tuning methods,
+    structures, windup and stiction
+  * [x] 2.4.4 `references/instrumentation-and-safety.md` — measurement, final
+    elements, P&ID, SIS/SIL, 62443
+  * [ ] 2.4.5 Trigger evals
 * [ ] **2.5 Chemical engineering** — AIChE / CCPS process safety
 * [ ] **2.6 Electrical engineering** — IEEE; power, protection, arc flash
 * [ ] **2.7 Electronics engineering** — IEEE; signal integrity, EMC, PCB
@@ -80,9 +118,9 @@ trigger evals.
   by every skill, rather than restated per skill
 * [x] **3.2a** — Canonical qualified-review notice defined in `AGENTS.md` and
   implemented in `aeronautical-engineering`
-* [ ] **3.2b** — Propagate the byte-identical notice into the remaining nine
-  skills as each is authored; verify with a CI check that every `SKILL.md`
-  contains it *(gates 4.2)*
+* [~] **3.2b** — Propagate the byte-identical notice into every skill as it is
+  authored, verified by CI. **4 of 10 done** (aeronautical, mechanical,
+  statics-and-dynamics, control-systems). *(gates 4.2)*
 * [ ] **3.2** — Consistent "report a result" block across all ten skills
 * [ ] **3.3** — Cross-discipline handoff guidance (e.g. aeronautical → materials
   for allowables; control systems → electronics for actuator drive)

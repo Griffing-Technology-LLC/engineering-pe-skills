@@ -84,7 +84,13 @@ structure and current completion state.
 | Skill | State |
 | --- | --- |
 | `aeronautical-engineering` | Draft — SKILL.md + 4 reference files |
-| all others | Not started |
+| `mechanical-engineering` | Draft — SKILL.md + 3 reference files |
+| `statics-and-dynamics` | Draft — SKILL.md + 3 reference files |
+| `control-systems-engineering` | Draft — SKILL.md + 3 reference files |
+| remaining six | Not started |
+
+All four drafts are pending licensed PE review (`TODO.md` §4.1) before
+publication.
 
 ## Attribution
 

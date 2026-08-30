@@ -5,12 +5,12 @@ structural load, factor-of-safety, or flight-envelope problem.
 
 ## Contents
 
-1. [Limit, ultimate, and the factor between them](#1-limit-ultimate-and-the-factor-between-them)
-2. [The V-n manoeuvre envelope](#2-the-v-n-manoeuvre-envelope)
-3. [Gust loads](#3-gust-loads)
-4. [Adopting criteria when none are imposed](#4-adopting-criteria-when-none-are-imposed)
-5. [Margin of safety reporting](#5-margin-of-safety-reporting)
-6. [Threaded joints](#6-threaded-joints)
+1. Limit, ultimate, and the factor between them
+2. The V-n manoeuvre envelope
+3. Gust loads
+4. Adopting criteria when none are imposed
+5. Margin of safety reporting
+6. Threaded joints
 
 ---
 
@@ -26,18 +26,54 @@ Three distinct quantities, routinely confused:
 
 $$P_{ult} = P_{limit} \times \mathrm{FOS}$$
 
-The classical airframe FOS is **1.5**. This value is longstanding practice in
-civil airworthiness codes, but the reader must confirm the governing paragraph
-for the specific certification basis in play — the 2017 restructure of 14 CFR
-Part 23 [REF-FAA-002] moved numerical criteria out of the rule and into consensus
-standards, so a bare citation to "Part 23" no longer establishes a number.
+The airframe factor of safety is **1.5**, and this is current regulatory text,
+not folklore. 14 CFR **§23.2230** *Limit and ultimate loads* [REF-FAA-002] states
+that the applicant must determine:
 
-> **`REQUIRES VERIFICATION`** — The specific paragraph formerly carrying the 1.5
-> factor (pre-Amendment-64 §23.303) and the normal-category limit manoeuvring load
-> factors (formerly §23.337, commonly cited as $n_1 = +3.8$, $n_2 = -1.52$) have
-> **not** been verified against the current eCFR text for this repository. Do not
-> assert these numbers as current regulatory requirements until confirmed. See
-> `TODO.md` §0.3.
+> "(a) The limit loads, which are equal to the structural design loads unless
+> otherwise specified elsewhere in this part; and (b) The ultimate loads, which
+> are equal to the limit loads multiplied by a **1.5 factor of safety** unless
+> otherwise specified elsewhere in this part."
+
+**§23.2235** *Structural strength* then requires the structure to support limit
+loads without "interference with the safe operation of the airplane" or
+"detrimental permanent deformation," and to support ultimate loads.
+
+### What Part 23 does *not* give you
+
+The 2017 restructure made Part 23 performance-based, and it did **not** carry the
+old numeric manoeuvring load factors forward. **§23.2200(b)** requires only:
+
+> "Design maneuvering load factors not less than those, which service history
+> shows, may occur within the structural design envelope."
+
+The values +3.8 and −1.52, widely quoted as "the Part 23 load factors," appear
+**nowhere in the current rule** — a full-text search of the retrieved Part 23
+returns zero occurrences of either number. They belong to the pre-2017 §23.337.
+Citing them to current Part 23 is a fabrication. If you need numeric factors,
+they come from the accepted consensus standard for the certification basis, or
+from your own service-history justification under §23.2200(b).
+
+**§23.2215** *Flight load conditions* likewise specifies the load *conditions* —
+atmospheric gusts "based on measured gust statistics," symmetric and asymmetric
+manoeuvres, and asymmetric thrust from a powerplant failure — without giving
+gust velocities in the rule.
+
+### Special factors of safety — the additive-manufacturing hook
+
+**§23.2265** requires a *special* factor of safety beyond the basic 1.5 for any
+part whose critical design value is uncertain, or that is:
+
+> "(2) Subject to appreciable variability because of uncertainties in
+> manufacturing processes or inspection methods."
+
+**Printed polymer structure sits squarely in that clause.** Layer adhesion,
+raster orientation, moisture, and machine-to-machine variation are exactly the
+"appreciable variability" contemplated. §23.2265(c) requires the highest
+pertinent special factor to multiply each limit and ultimate load. Related,
+**§23.2260(b)** requires that a fabrication process needing close control be
+performed under an approved process specification — which for FDM means the
+print profile is part of the design record, not a shop-floor choice.
 
 For spaceflight-derived practice, NASA-STD-5001 [REF-NASA-001] sets out a
 structured factor framework distinguishing design, yield, and ultimate factors.
@@ -99,10 +135,11 @@ where $a$ is the wing lift-curve slope $\mathrm{d}C_L/\mathrm{d}\alpha$ per radi
 and $\rho_0$ sea-level density. Gust and manoeuvre envelopes are overlaid; the
 governing case is whichever is outermost at each speed.
 
-> **`REQUIRES VERIFICATION`** — Design gust velocities $U_{de}$ and the
-> formulation of $K_g$ are specified by the certification basis. The values
-> commonly quoted for normal-category aeroplanes are **not** verified here.
-> See `TODO.md` §0.3.
+Design gust velocities $U_{de}$ and the formulation of $K_g$ are **not** in
+current Part 23, which requires only that gusts be "based on measured gust
+statistics" (§23.2215(a)) [REF-FAA-002]. Numeric values come from the accepted
+consensus standard for the certification basis. Do not quote a gust velocity
+without naming the document it came from.
 
 ## 4. Adopting criteria when none are imposed
 

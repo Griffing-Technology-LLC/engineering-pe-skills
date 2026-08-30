@@ -2,8 +2,10 @@
 
 Authoritative reference catalog for the `engineering-pe-skills` repository.
 
-Every specification, calculation method, and design rule asserted anywhere in this
-repository is traceable to an entry below.  Each entry carries a REF-ID, the full
+Every specification, calculation method, and design rule asserted anywhere in
+this
+repository is traceable to an entry below.  Each entry carries a REF-ID, the
+full
 title of the source, a validated URL, the specific portion applied, and every
 repository location that cites it.
 
@@ -23,7 +25,8 @@ All URLs checked 2026-08-29 unless noted otherwise.
 
 ### REF-NCEES-001 — NCEES PE Exam discipline catalog
 
-* **Title:** *PE Exam* — National Council of Examiners for Engineering and Surveying
+* **Title:** *PE Exam* — National Council of Examiners for Engineering and
+  Surveying
 * **URL:** <https://ncees.org/exams/pe-exam/>
 * **Status:** `VERIFIED`
 * **Applied:** The authoritative list of 23 PE disciplines used to scope this
@@ -35,7 +38,8 @@ All URLs checked 2026-08-29 unless noted otherwise.
 
 ### REF-NCEES-002 — NCEES FE Exam
 
-* **Title:** *FE Exam* — National Council of Examiners for Engineering and Surveying
+* **Title:** *FE Exam* — National Council of Examiners for Engineering and
+  Surveying
 * **URL:** <https://ncees.org/engineering/fe/>
 * **Status:** `VERIFIED`
 * **Applied:** Establishes that statics and dynamics are **FE-level** subject
@@ -48,7 +52,8 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **Title:** *PE Mechanical* — NCEES
 * **URL:** <https://ncees.org/exams/pe-exam/mechanical/>
 * **Status:** `VERIFIED`
-* **Applied:** Module structure (HVAC & Refrigeration; Machine Design & Materials;
+* **Applied:** Module structure (HVAC & Refrigeration; Machine Design &
+  Materials;
   Thermal & Fluid Systems); 80 questions; 9-hour appointment.
 * **Cited in:** `skills/mechanical-engineering/SKILL.md`
 
@@ -58,7 +63,8 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **URL:** <https://ncees.org/exams/pe-exam/electrical-and-computer/>
 * **Status:** `VERIFIED`
 * **Applied:** Module structure — Computer Engineering; **Electronics, Controls,
-  and Communications**; Power. Power is 80 questions / 9 hours; the other two are
+  and Communications**; Power. Power is 80 questions / 9 hours; the other two
+  are
   85 questions / 9.5 hours.
 * **Cited in:** `skills/electrical-engineering/SKILL.md`,
   `skills/electronics-engineering/SKILL.md`
@@ -118,25 +124,32 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **URL:** <https://www.sname.org/>
 * **Status:** `VERIFIED`
 * **Applied:** Discipline society for naval architecture and marine engineering.
-  Stated mission: "Advancing the art, science, and practice of naval architecture
-  and marine engineering." Operates a member PE Review Course (PERC) and publishes
+  Stated mission: "Advancing the art, science, and practice of naval
+  architecture
+  and marine engineering." Operates a member PE Review Course (PERC) and
+  publishes
   T&R Bulletins and Reports.
 * **Cited in:** `skills/naval-architecture-marine/SKILL.md`
 
 ### REF-SOC-003 — ISA (International Society of Automation)
 
 * **Title:** *International Society of Automation*
-* **URL:** <https://www.isa.org/>
-* **Status:** `VERIFIED` (root domain); specific CSE-licensure page
-  `REQUIRES VERIFICATION`
+* **URL:** <https://www.isa.org/certification>
+* **Status:** `VERIFIED`
 * **Applied:** Discipline society and SDO for control systems engineering;
-  publisher of the ISA-5.1, ISA-84 / IEC 61511, ISA-88, ISA-95, and ISA/IEC 62443
+  publisher of the ISA-5.1, ISA-84 / IEC 61511, ISA-88, ISA-95, and ISA/IEC
+  62443
   standards series.
+* **Role, in ISA's own words:** "ISA supports the Control Systems Engineer (CSE)
+  License, a specialized Professional Engineering (PE) license recognized in the
+  United States for engineers working in automation and control. ISA offers
+  training courses and review materials to help engineers prepare for state
+  boards' exams held each October."
+* **Scope of the claim:** ISA states it **supports** the CSE licence and
+  supplies
+  preparation material. It does **not** claim to author or administer the NCEES
+  examination. Do not upgrade this wording to "sponsors" or "develops."
 * **Cited in:** `skills/control-systems-engineering/SKILL.md`
-* **Open item:** The ISA page describing its role relative to the NCEES PE Control
-  Systems exam returned HTTP 404 at the URL first tried. The specific sponsorship
-  relationship is **not yet verified** and is not asserted anywhere in this
-  repository. Tracked as TODO §0.1.
 
 ### REF-SOC-004 — ASME (American Society of Mechanical Engineers)
 
@@ -164,7 +177,8 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **Title:** *American Institute of Chemical Engineers*
 * **URL:** <https://www.aiche.org/>
 * **Status:** `VERIFIED (BLOCKED)` — HTTP 403 to automated check
-* **Applied:** Principal professional society for chemical engineering; parent of
+* **Applied:** Principal professional society for chemical engineering; parent
+  of
   the Center for Chemical Process Safety (CCPS).
 * **Cited in:** `skills/chemical-engineering/SKILL.md`
 
@@ -196,26 +210,50 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **Title:** *Title 14 CFR Part 107 — Small Unmanned Aircraft Systems*
 * **URL:** <https://www.ecfr.gov/current/title-14/part-107>
 * **Status:** `VERIFIED`
-* **Applied:** Operating rules and airworthiness expectations for civil sUAS under
+* **Applied:** Operating rules and airworthiness expectations for civil sUAS
+  under
   55 lbm (25 kg) in US airspace; §107.51 operating limitations.
 * **Cited in:** `skills/aeronautical-engineering/SKILL.md`
 
 ### REF-FAA-002 — 14 CFR Part 23, Airworthiness Standards: Normal Category Airplanes
 
-* **Title:** *Title 14 CFR Part 23 — Airworthiness Standards: Normal Category Airplanes*
+* **Title:** *Title 14 CFR Part 23 — Airworthiness Standards: Normal Category
+  Airplanes*
 * **URL:** <https://www.ecfr.gov/current/title-14/part-23>
 * **Status:** `VERIFIED`
-* **Applied:** Performance-based airworthiness structure; limit and ultimate load
-  factor philosophy applied by analogy to unmanned airframes.
+* **Applied:** Sections read in full from the eCFR API (title-14, issue date
+  2026-08-27):
+  * **§23.2200** *Structural design envelope* — para (b) requires "Design
+    maneuvering load factors not less than those, which service history shows,
+    may occur within the structural design envelope." **Performance-based: the
+    rule states no numeric load factor.**
+  * **§23.2215** *Flight load conditions* — gusts based on measured gust
+    statistics; symmetric and asymmetric manoeuvres; asymmetric thrust.
+  * **§23.2230** *Limit and ultimate loads* — para (b): "The ultimate loads,
+    which are equal to the limit loads multiplied by a **1.5 factor of safety**
+    unless otherwise specified elsewhere in this part."
+  * **§23.2235** *Structural strength* — limit loads without detrimental
+    permanent deformation; ultimate loads without failure.
+  * **§23.2260** *Materials and processes* — para (b): fabrication requiring
+    close control must be performed under an approved process specification.
+  * **§23.2265** *Special factors of safety* — required where a critical design
+    value is uncertain or the article is "subject to appreciable variability
+    because of uncertainties in manufacturing processes or inspection methods."
+* **Note:** The numeric manoeuvring load factors often quoted as +3.8 / −1.52
+  appear **nowhere** in current Part 23 (zero occurrences of "3.8" or "1.52" in
+  the retrieved text). They belong to the pre-2017 rule. Do not cite them to
+  current Part 23.
 * **Cited in:** `skills/aeronautical-engineering/SKILL.md`,
   `skills/aeronautical-engineering/references/loads-and-factors.md`
 
 ### REF-FAA-003 — 14 CFR Part 21, Certification Procedures for Products and Articles
 
-* **Title:** *Title 14 CFR Part 21 — Certification Procedures for Products and Articles*
+* **Title:** *Title 14 CFR Part 21 — Certification Procedures for Products and
+  Articles*
 * **URL:** <https://www.ecfr.gov/current/title-14/part-21>
 * **Status:** `VERIFIED`
-* **Applied:** Certification pathway definitions; distinguishes type-certificated
+* **Applied:** Certification pathway definitions; distinguishes
+  type-certificated
   from experimental and special-airworthiness pathways.
 * **Cited in:** `skills/aeronautical-engineering/SKILL.md`
 
@@ -224,7 +262,8 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **Title:** *Advisory Circulars* — Federal Aviation Administration
 * **URL:** <https://www.faa.gov/regulations_policies/advisory_circulars>
 * **Status:** `VERIFIED`
-* **Applied:** Entry point for AC-series acceptable means of compliance. Individual
+* **Applied:** Entry point for AC-series acceptable means of compliance.
+  Individual
   ACs must be added to this catalog with their own REF-ID before being cited.
 * **Cited in:** `skills/aeronautical-engineering/SKILL.md`
 
@@ -238,7 +277,8 @@ All URLs checked 2026-08-29 unless noted otherwise.
   yield, and ultimate factors. Applied by analogy to airframe structure; the
   standard's own scope is spaceflight hardware and this limitation is stated
   wherever it is cited.
-* **Cited in:** `skills/aeronautical-engineering/references/loads-and-factors.md`
+* **Cited in:**
+  `skills/aeronautical-engineering/references/loads-and-factors.md`
 
 ### REF-NASA-002 — NASA-STD-5020, Threaded Fastening Systems
 
@@ -247,7 +287,8 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **URL:** <https://standards.nasa.gov/standard/nasa/nasa-std-5020>
 * **Status:** `VERIFIED`
 * **Applied:** Fastener preload, separation, and joint-margin methodology.
-* **Cited in:** `skills/aeronautical-engineering/references/loads-and-factors.md`
+* **Cited in:**
+  `skills/aeronautical-engineering/references/loads-and-factors.md`
 
 ### REF-NASA-003 — NASA Technical Reports Server
 
@@ -255,7 +296,8 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **URL:** <https://ntrs.nasa.gov/>
 * **Status:** `VERIFIED`
 * **Applied:** Primary source for NACA/NASA airfoil and aerodynamic reports.
-  Individual reports must be added with their own REF-ID and NTRS document number
+  Individual reports must be added with their own REF-ID and NTRS document
+  number
   before being cited.
 * **Cited in:** `skills/aeronautical-engineering/SKILL.md`
 
@@ -271,11 +313,49 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **Open item:** Individual F38 standard designations are **not yet verified**.
   Tracked as TODO §0.2.
 
+### REF-NCEES-009 — NCEES FE Reference Handbook
+
+* **Title:** *FE Reference Handbook* — NCEES
+* **URL:** <https://ncees.org/engineering/fe/>
+* **Status:** `VERIFIED` (landing page); specific handbook version
+  `REQUIRES VERIFICATION`
+* **Applied:** The sole reference permitted in the FE examination, and therefore
+  the definition of FE-level scope for `skills/statics-and-dynamics`.
+* **Cited in:** `skills/statics-and-dynamics/SKILL.md`
+* **Open item:** Confirm the current handbook version number and its published
+  statics/dynamics section list. Tracked as TODO §0.6.
+
+### REF-ISA-001 — ISA standards portfolio
+
+* **Title:** *Standards and Publications* — International Society of Automation
+* **URL:** <https://www.isa.org/standards-and-publications>
+* **Status:** `VERIFIED` (index page); individual standard designations
+  `REQUIRES VERIFICATION`
+* **Applied:** Entry point for the ISA-5.1 (instrumentation symbols), ISA-84 /
+  IEC 61511 (safety instrumented systems), ISA-88 (batch control), ISA-95
+  (enterprise-control integration), and ISA/IEC 62443 (industrial cybersecurity)
+  series.
+* **Cited in:** `skills/control-systems-engineering/SKILL.md`
+* **Open item:** Each individual standard's designation, edition, and year must
+  be
+  confirmed before being cited by number. Tracked as TODO §0.7.
+
 ---
 
 ## Removed / Superseded Citations
 
-*None to date.*
+**Corrected 2026-08-29 — factor of safety in 14 CFR Part 23.** An earlier draft
+of `references/loads-and-factors.md` marked the 1.5 airframe factor of safety
+`REQUIRES VERIFICATION`, on the reasoning that the 2017 Part 23 restructure
+moved
+numeric criteria into consensus standards. Reading the current rule text from
+the
+eCFR API disproved that for the factor of safety specifically: **§23.2230(b)
+states the 1.5 factor explicitly and it is current.** The caution was correct
+for
+the *manoeuvring load factors* (+3.8 / −1.52), which are genuinely absent from
+the
+current rule. Both are now cited accurately under REF-FAA-002.
 
 ---
 

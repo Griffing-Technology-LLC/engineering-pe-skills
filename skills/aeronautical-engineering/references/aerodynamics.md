@@ -4,11 +4,11 @@ Reference file for the `aeronautical-engineering` skill.
 
 ## Contents
 
-1. [Establish the regime first](#1-establish-the-regime-first)
-2. [Section (2-D) characteristics](#2-section-2-d-characteristics)
-3. [Finite-wing correction](#3-finite-wing-correction)
-4. [Drag build-up](#4-drag-build-up)
-5. [Low-Reynolds-number practice](#5-low-reynolds-number-practice)
+1. Establish the regime first
+2. Section (2-D) characteristics
+3. Finite-wing correction
+4. Drag build-up
+5. Low-Reynolds-number practice
 
 ---
 
