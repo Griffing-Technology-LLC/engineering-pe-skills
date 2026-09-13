@@ -1,0 +1,17 @@
+{
+    // All markdownlint rules are enabled by default; only MD013 is tuned.
+    // Tables and fenced code cannot be wrapped without corrupting them, and a
+    // SKILL.md frontmatter `description` must be a single unbroken line to
+    // satisfy the Agent Skills format. Prose remains bound to 80 columns.
+    "config": {
+        "MD013": {
+            "line_length": 80,
+            "tables": false,
+            "code_blocks": false,
+            "headings": false
+        }
+    },
+    "ignores": [
+        "node_modules/**"
+    ]
+}

@@ -1,0 +1,59 @@
+name: validate
+
+# Lint, and enforce the two repository invariants that cannot be left to review:
+# every skill carries the qualified-review notice, and every skill declares its
+# NCEES alignment explicitly (including "NONE" where no alignment exists).
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+
+permissions:
+    contents: read
+
+jobs:
+    markdownlint:
+        name: markdownlint (all rules)
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Run markdownlint-cli2
+              run: npx -y markdownlint-cli2 "**/*.md"
+
+    mandatory-notice:
+        name: qualified-review notice present in every skill
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Check every SKILL.md
+              run: |
+                  set -euo pipefail
+                  status=0
+                  found=0
+                  while IFS= read -r f; do
+                      found=$((found + 1))
+                      if ! grep -q "ENGINEERING REVIEW REQUIRED" "$f"; then
+                          echo "::error file=$f::missing the mandatory qualified-review notice"
+                          status=1
+                          continue
+                      fi
+                      # The notice must precede every other section of the skill.
+                      notice_line=$(grep -n "^## Mandatory notice" "$f" | head -1 | cut -d: -f1 || true)
+                      first_h2=$(grep -n "^## " "$f" | head -1 | cut -d: -f1)
+                      if [ -z "$notice_line" ] || [ "$notice_line" != "$first_h2" ]; then
+                          echo "::error file=$f::the mandatory notice must be the first '##' section"
+                          status=1
+                      fi
+                      # Alignment must be stated, never implied.
+                      if ! grep -q "ncees_alignment:" "$f"; then
+                          echo "::error file=$f::frontmatter is missing ncees_alignment"
+                          status=1
+                      fi
+                  done < <(find skills -name SKILL.md)
+                  if [ "$found" -eq 0 ]; then
+                      echo "::error::no SKILL.md files found"
+                      exit 1
+                  fi
+                  echo "checked $found skill(s)"
+                  exit $status
