@@ -44,6 +44,12 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
   standards (ISA-5.1, ISA-84/IEC 61511, ISA-88, ISA-95, ISA/IEC 62443) before any
   is cited by number. *(REF-ISA-001; `control-systems-engineering` currently
   cites the series only as an index entry, with in-file cautions)*
+* [ ] **0.8** — Confirm specific NFPA 70 (NEC) article/table numbers by browser
+  against the 2026 edition (nfpa.org blocked automated retrieval), and resolve
+  which NFPA 70E edition is current as of the query date (2024 vs 2027
+  editions both appear in bookseller listings). *(REF-NFPA-001, REF-NFPA-002;
+  `electrical-engineering` currently cites NEC topics without article numbers
+  and flags 70E's current edition as unconfirmed)*
 
 ## 1. Repository infrastructure
 
@@ -106,11 +112,45 @@ trigger evals.
     elements, P&ID, SIS/SIL, 62443
   * [ ] 2.4.5 Trigger evals
 * [ ] **2.5 Chemical engineering** — AIChE / CCPS process safety
-* [ ] **2.6 Electrical engineering** — IEEE; power, protection, arc flash
+* [x] **2.6 Electrical engineering** — IEEE; power, protection, arc flash
+  * [x] 2.6.1 `SKILL.md` — PE Electrical/Computer Power module standing,
+    IEEE/NFPA citation caveats, practice rules
+  * [x] 2.6.2 `references/power-systems-and-per-unit.md` — per-unit, base
+    conversion, three-phase power, symmetrical components, transformers
+  * [x] 2.6.3 `references/protection-and-fault-analysis.md` — fault types and
+    sequence networks, symmetrical fault current, overcurrent sizing,
+    coordination, grounding schemes
+  * [x] 2.6.4 `references/arc-flash-and-safety.md` — IEEE 1584-2018
+    calculation framework (verified scope, no fabricated coefficients),
+    NFPA 70E work-practice requirements
+  * [ ] 2.6.5 Trigger evals
 * [ ] **2.7 Electronics engineering** — IEEE; signal integrity, EMC, PCB
-* [ ] **2.8 Naval architecture and marine** — SNAME; hydrostatics, stability, resistance
+* [x] **2.8 Naval architecture and marine** — SNAME; hydrostatics, stability,
+  resistance
+  * [x] 2.8.1 `SKILL.md` — PE Naval Architecture standing (no published module
+    breakdown, re-verified 2026-09-16), SNAME/PNA citation caveat, practice
+    rules
+  * [x] 2.8.2 `references/hydrostatics-and-stability.md` — buoyancy, KB/BM/GM,
+    GZ curve, IMO 2008 IS Code §2.2/§2.3 criteria (verified against primary
+    text), trim
+  * [x] 2.8.3 `references/resistance-and-propulsion.md` — Froude/Reynolds
+    scaling, ITTC-57 correlation line, resistance decomposition, propulsion
+    coefficients (verified against ITTC 7.5-02-02-01)
+  * [ ] 2.8.4 Trigger evals
 * [ ] **2.9 Fire protection engineering** — SFPE / NFPA
 * [ ] **2.10 Materials and additive manufacturing** — polymer AM anisotropy, allowables
+* [x] **2.11 Thermodynamics** — FE-level, cross-discipline (feeds mechanical,
+  chemical, naval architecture, aeronautical, fire protection)
+  * [x] 2.11.1 `SKILL.md` — FE examination standing, downstream discipline
+    handoffs, practice rules ($g_c$, absolute-temperature discipline,
+    efficiency-vs-COP)
+  * [x] 2.11.2 `references/thermodynamics.md` — properties, first/second law,
+    isentropic efficiency, power/refrigeration cycles, psychrometrics
+  * [x] 2.11.3 `references/heat-transfer.md` — conduction, convection,
+    radiation, fins, LMTD/effectiveness-NTU
+  * [x] 2.11.4 `references/fluid-mechanics.md` — statics, continuity, energy
+    equation, Reynolds/Froude, pipe flow
+  * [ ] 2.11.5 Trigger evals
 
 ## 3. Cross-cutting
 
@@ -119,8 +159,9 @@ trigger evals.
 * [x] **3.2a** — Canonical qualified-review notice defined in `AGENTS.md` and
   implemented in `aeronautical-engineering`
 * [~] **3.2b** — Propagate the byte-identical notice into every skill as it is
-  authored, verified by CI. **4 of 10 done** (aeronautical, mechanical,
-  statics-and-dynamics, control-systems). *(gates 4.2)*
+  authored, verified by CI. **7 of 11 done** (aeronautical, mechanical,
+  statics-and-dynamics, control-systems, naval-architecture-marine,
+  thermodynamics, electrical-engineering). *(gates 4.2)*
 * [ ] **3.2** — Consistent "report a result" block across all ten skills
 * [ ] **3.3** — Cross-discipline handoff guidance (e.g. aeronautical → materials
   for allowables; control systems → electronics for actuator drive)

@@ -3,7 +3,8 @@
 Agent Skills for licensed-discipline engineering practice, with authoritative
 citations and explicit calculation methods.
 
-Ten skills covering the engineering disciplines needed for real hardware design.
+Eleven skills covering the engineering disciplines needed for real hardware
+design.
 Each is aligned — where an alignment honestly exists — to an
 [NCEES PE discipline](https://ncees.org/exams/pe-exam/), and each cites its
 discipline's professional society and standards-developing organization.
@@ -44,6 +45,7 @@ That behaviour is a fixed condition of the skills, not a configurable option.
 | `aeronautical-engineering` | **None — no PE exam exists** | AIAA; FAA & NASA & ASTM F38 as authority |
 | `mechanical-engineering` | Mechanical (HVAC&R; Machine Design & Materials; Thermal & Fluid Systems) | ASME |
 | `statics-and-dynamics` | **FE-level**, not a PE discipline | — (foundational; NCEES FE) |
+| `thermodynamics` | **FE-level**, not a PE discipline | — (foundational; NCEES FE) |
 | `control-systems-engineering` | Control Systems | ISA |
 | `chemical-engineering` | Chemical | AIChE / CCPS |
 | `electrical-engineering` | Electrical and Computer: Power | IEEE |
@@ -60,9 +62,10 @@ this field typically sit PE Mechanical. This repository does not claim an
 alignment that does not exist; the aeronautical skill is aligned to FAA
 regulation, NASA technical standards, and ASTM F38 instead.
 
-**Statics and dynamics is FE-level subject matter**, appearing in the Fundamentals
-of Engineering exam and inside several PE specifications — not a PE discipline of
-its own. It is provided as a foundational skill the others build on.
+**Statics and dynamics, and thermodynamics/heat transfer/fluid mechanics, are
+FE-level subject matter**, appearing in the Fundamentals of Engineering exam
+and inside several PE specifications — not PE disciplines of their own. Both
+are provided as foundational skills the others build on.
 
 ## Installation
 
@@ -87,9 +90,12 @@ structure and current completion state.
 | `mechanical-engineering` | Draft — SKILL.md + 3 reference files |
 | `statics-and-dynamics` | Draft — SKILL.md + 3 reference files |
 | `control-systems-engineering` | Draft — SKILL.md + 3 reference files |
-| remaining six | Not started |
+| `naval-architecture-marine` | Draft — SKILL.md + 2 reference files |
+| `thermodynamics` | Draft — SKILL.md + 3 reference files |
+| `electrical-engineering` | Draft — SKILL.md + 3 reference files |
+| remaining four | Not started |
 
-All four drafts are pending licensed PE review (`TODO.md` §4.1) before
+All seven drafts are pending licensed PE review (`TODO.md` §4.1) before
 publication.
 
 ## Attribution
