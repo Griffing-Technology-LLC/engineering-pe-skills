@@ -80,9 +80,10 @@ requires iteration the other case does not.
 convective film resistances, the wall conduction resistance, and any fouling
 resistance on each side:
 
-$$\frac{1}{UA} = \frac{1}{h_i A_i} + R_{f,i} + \frac{\ln(D_o/D_i)}{2\pi k L} + R_{f,o} + \frac{1}{h_o A_o}$$
+$$\frac{1}{UA} = \frac{1}{h_i A_i} + R_{fi} + R_{w} + R_{fo} + \frac{1}{h_o A_o}$$
 
-$R_{f,i}$, $R_{f,o}$ — inside and outside fouling resistances.
+$R_{fi}$, $R_{fo}$ — inside/outside fouling resistances; $R_w =
+\ln(D_o/D_i)/(2\pi k L)$ — wall conduction resistance, cylindrical wall.
 
 **A specific fouling-factor allowable is a design/code matter**, not a bare
 thermodynamics fact — cite it from the governing code or manufacturer data in

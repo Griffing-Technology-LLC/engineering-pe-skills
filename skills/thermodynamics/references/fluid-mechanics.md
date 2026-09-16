@@ -40,7 +40,10 @@ $$\frac{p}{\rho g} + \frac{V^2}{2g} + z = \text{constant}$$
 turbine enters the picture, extend it to the general energy equation with a
 head-loss and machine-work term:
 
-$$\frac{p_1}{\rho g} + \frac{V_1^2}{2g} + z_1 + h_{pump} = \frac{p_2}{\rho g} + \frac{V_2^2}{2g} + z_2 + h_{turbine} + h_L$$
+$$H_1 + h_p = H_2 + h_t + h_L, \quad H = \frac{p}{\rho g} + \frac{V^2}{2g} + z$$
+
+$H$ — total head at a section; $h_p$, $h_t$ — pump and turbine head added or
+removed; $h_L$ — total head loss between sections 1 and 2.
 
 Write every term first, then drop only the ones that are actually negligible
 for the specific problem, and state which ones and why — silently dropping
