@@ -42,10 +42,12 @@ All URLs checked 2026-08-29 unless noted otherwise.
   Surveying
 * **URL:** <https://ncees.org/engineering/fe/>
 * **Status:** `VERIFIED`
-* **Applied:** Establishes that statics and dynamics are **FE-level** subject
-  matter, not a PE discipline. Governs the alignment of
-  `skills/statics-and-dynamics/`.
-* **Cited in:** `skills/statics-and-dynamics/SKILL.md`
+* **Applied:** Establishes that statics and dynamics, and thermodynamics/heat
+  transfer/fluid mechanics, are **FE-level** subject matter, not a PE
+  discipline on their own. Governs the alignment of
+  `skills/statics-and-dynamics/` and `skills/thermodynamics/`.
+* **Cited in:** `skills/statics-and-dynamics/SKILL.md`,
+  `skills/thermodynamics/SKILL.md`
 
 ### REF-NCEES-003 — PE Mechanical exam specification
 
@@ -99,7 +101,11 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **Title:** *PE Naval Architecture and Marine Engineering* — NCEES
 * **URL:** <https://ncees.org/exams/pe-exam/naval-architecture-and-marine/>
 * **Status:** `VERIFIED`
-* **Applied:** 85 questions; 9.5-hour appointment.
+* **Applied:** 85 questions; 9.5-hour appointment. Re-verified 2026-09-16: the
+  exam landing page does **not** publish a named module breakdown (unlike PE
+  Mechanical's three named modules) — the specification document itself was
+  not retrieved. Do not assert a module structure for this exam. Open item:
+  `TODO.md` §0.5.
 * **Cited in:** `skills/naval-architecture-marine/SKILL.md`
 
 ---
@@ -320,10 +326,79 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **Status:** `VERIFIED` (landing page); specific handbook version
   `REQUIRES VERIFICATION`
 * **Applied:** The sole reference permitted in the FE examination, and therefore
-  the definition of FE-level scope for `skills/statics-and-dynamics`.
-* **Cited in:** `skills/statics-and-dynamics/SKILL.md`
+  the definition of FE-level scope for `skills/statics-and-dynamics` and
+  `skills/thermodynamics`.
+* **Cited in:** `skills/statics-and-dynamics/SKILL.md`,
+  `skills/thermodynamics/SKILL.md`
 * **Open item:** Confirm the current handbook version number and its published
-  statics/dynamics section list. Tracked as TODO §0.6.
+  statics/dynamics and thermodynamics section lists. Tracked as TODO §0.6.
+
+### REF-SNAME-001 — Principles of Naval Architecture (PNA)
+
+* **Title:** *Principles of Naval Architecture* — Society of Naval Architects and
+  Marine Engineers (SNAME)
+* **URL:** <https://sname.org/principles-naval-architecture>
+* **Status:** `VERIFIED` (publisher, series scope, and volume titles confirmed
+  2026-09-16 by fetching the SNAME page directly)
+* **Applied:** Governing textbook for naval architecture and marine engineering
+  practice — cited generally as "PNA" for method scope (hydrostatics and
+  stability, resistance and propulsion, strength, seakeeping, vibration,
+  maneuverability). **No specific page, chapter, or edition number is cited from
+  this source** — only the publisher, title, and coverage were confirmed, not the
+  book's own text. Any numeric method or table attributed to PNA by
+  chapter/section must be independently verified against the actual volume
+  before being asserted; until then it is cited to a primary source instead
+  (IMO, ITTC) where one exists.
+* **Cited in:** `skills/naval-architecture-marine/SKILL.md`,
+  `skills/naval-architecture-marine/references/hydrostatics-and-stability.md`,
+  `skills/naval-architecture-marine/references/resistance-and-propulsion.md`
+
+### REF-IMO-001 — International Code on Intact Stability, 2008 (2008 IS Code)
+
+* **Title:** *International Code on Intact Stability, 2008 (2008 IS Code)*,
+  2020 Edition — International Maritime Organization, adopted by IMO Resolution
+  MSC.267(85)
+* **URL:** <https://www.imo.org/en/OurWork/Safety/Pages/ShipDesignAndStability-default.aspx>
+  (IMO entry point; the Code itself is a paid IMO/Witherbys publication, not a
+  free full-text URL)
+* **Status:** `VERIFIED` — chapter 1 and chapter 2 ("General criteria") text
+  read directly from the publisher's publicly posted preview excerpt
+  (2020 Edition) on 2026-09-16, not assumed from secondary sources.
+* **Applied:** Part A mandatory general intact stability criteria, read verbatim
+  from the 2020 Edition preview:
+  * **§2.2.1** — area under the GZ curve $\geq 0.055$ m·rad to $\varphi=30°$,
+    $\geq 0.09$ m·rad to $\varphi=40°$ (or the down-flooding angle
+    $\varphi_f$ if less than 40°), and $\geq 0.03$ m·rad between 30° and 40°
+    (or 30° and $\varphi_f$).
+  * **§2.2.2** — $GZ \geq 0.2$ m at an angle of heel $\geq 30°$.
+  * **§2.2.3** — maximum GZ shall occur at a heel angle $\geq 25°$ (or an
+    Administration-approved equivalent).
+  * **§2.2.4** — initial metacentric height $GM_0 \geq 0.15$ m.
+  * **§2.3** — severe wind and rolling ("weather") criterion: steady wind
+    heeling lever $l_{w1} = P\,A\,Z/(1000\,g\,\Delta)$ with $P = 504$ Pa;
+    gust heeling lever $l_{w2} = 1.5\,l_{w1}$; steady heel angle
+    $\varphi_0 \leq 16°$ or 80% of deck-edge immersion, whichever is less;
+    area $b \geq$ area $a$ per Figure 2.3.1-1; alternative test wind speed
+    26 m/s full-scale.
+  * **§1.1.1** — applies to cargo and passenger ships $\geq 24$ m in length.
+* **Cited in:**
+  `skills/naval-architecture-marine/references/hydrostatics-and-stability.md`
+
+### REF-ITTC-001 — ITTC Recommended Procedure 7.5-02-02-01, Resistance Test
+
+* **Title:** *ITTC – Recommended Procedures and Guidelines, 7.5-02-02-01,
+  "Resistance Test"*, Revision 04, effective 2017 — International Towing Tank
+  Conference, Resistance Committee of the 28th ITTC
+* **URL:** <https://www.ittc.info/media/8001/75-02-02-01.pdf>
+* **Status:** `VERIFIED` — document read directly on 2026-09-16.
+* **Applied:** §2.1 resistance-coefficient decomposition:
+  $C_T = R_T / (\tfrac{1}{2}\rho S V^2)$, $C_V = C_F(1+k)$,
+  $C_W = C_T - C_V$; the **1957 ITTC model-ship correlation line**
+  $C_F = 0.075/(\log_{10}Re - 2)^2$; length Froude number $Fr = V/\sqrt{gL}$
+  and depth Froude number $Fr_h = V/\sqrt{gh}$ (§2.1–2.2, verified formula
+  set and variable definitions).
+* **Cited in:**
+  `skills/naval-architecture-marine/references/resistance-and-propulsion.md`
 
 ### REF-ISA-001 — ISA standards portfolio
 
