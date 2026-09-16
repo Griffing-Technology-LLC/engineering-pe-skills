@@ -27,20 +27,38 @@ engineering-pe-skills/
     │       ├── instrumentation-and-safety.md  Sensors, valves, P&ID, SIS/SIL
     │       ├── loop-dynamics.md       FOPDT, dead time, margins, robustness
     │       └── pid-and-tuning.md      PID forms, tuning, structures, windup
+    ├── electrical-engineering/
+    │   ├── SKILL.md                   PE Power module standing, IEEE/NFPA
+    │   └── references/
+    │       ├── arc-flash-and-safety.md         IEEE 1584 framework, 70E
+    │       ├── power-systems-and-per-unit.md   Per-unit, 3-phase, xfmrs
+    │       └── protection-and-fault-analysis.md  Faults, OCP, coordination
     ├── mechanical-engineering/
     │   ├── SKILL.md                   Three PE modules, practice rules
     │   └── references/
     │       ├── machine-elements.md    Shafts, bearings, gears, springs, joints
     │       ├── materials-and-fatigue.md  Stress, failure theories, fatigue
     │       └── thermal-and-fluids.md  Cycles, heat transfer, fluids, HVAC
-    └── statics-and-dynamics/
-        ├── SKILL.md                   FE standing, g_c discipline, determinacy
+    ├── naval-architecture-marine/
+    │   ├── SKILL.md                   PE standing, SNAME/PNA caveat, rules
+    │   └── references/
+    │       ├── hydrostatics-and-stability.md  KB/BM/GM, GZ, IMO IS Code, trim
+    │       └── resistance-and-propulsion.md   Fr/Re scaling, ITTC-57, powering
+    ├── statics-and-dynamics/
+    │   ├── SKILL.md                   FE standing, g_c discipline, determinacy
+    │   └── references/
+    │       ├── dynamics.md            Kinematics, kinetics, energy, momentum
+    │       ├── section-properties.md  Centroids, second moments, mass MOI
+    │       └── statics.md             Equilibrium, trusses, frames, friction
+    └── thermodynamics/
+        ├── SKILL.md                   FE standing, cross-discipline handoffs
         └── references/
-            ├── dynamics.md            Kinematics, kinetics, energy, momentum
-            ├── section-properties.md  Centroids, second moments, mass MOI
-            └── statics.md             Equilibrium, trusses, frames, friction
+            ├── fluid-mechanics.md     Statics, continuity, energy eq, Re/Fr
+            ├── heat-transfer.md       Conduction, convection, radiation, HX
+            └── thermodynamics.md      Laws, entropy, cycles, psychrometrics
 ```
 
 ## Planned
 
-Six further discipline skills under `skills/`, per `TODO.md` §2.5–2.10.
+Four further discipline skills under `skills/`, per `TODO.md` §2.5, §2.7,
+§2.9–2.10.

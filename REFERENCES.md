@@ -400,6 +400,69 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **Cited in:**
   `skills/naval-architecture-marine/references/resistance-and-propulsion.md`
 
+### REF-NFPA-001 — NFPA 70, National Electrical Code (NEC)
+
+* **Title:** *NFPA 70, National Electrical Code (NEC)*, 2026 Edition —
+  National Fire Protection Association
+* **URL:** <https://www.nfpa.org/product/nfpa-70-national-electrical-code-nec/p0070code>
+* **Status:** `VERIFIED (BLOCKED)` — the 2026 edition and its late-2025 release
+  were confirmed via the ANSI webstore and ICC Safe listings (both accredited
+  resellers) on 2026-09-16; nfpa.org itself returned only page chrome to
+  automated fetch, matching the pattern already recorded for NFPA under
+  REF-SOC-008.
+* **Applied:** Governing US wiring and equipment code, cited generally as the
+  authority for overcurrent protection, grounding and bonding, conductor
+  ampacity, and working-space clearance topics discussed in
+  `electrical-engineering`. **No specific NEC article or table number is
+  cited from this source** — the full text was not accessible for direct
+  verification. Any specific article/table number asserted in this
+  repository must be confirmed against the actual 2026 NEC text before being
+  relied upon; until then it is flagged `REQUIRES VERIFICATION` inline. See
+  `TODO.md` §0.8.
+* **Cited in:** `skills/electrical-engineering/SKILL.md`,
+  `skills/electrical-engineering/references/protection-and-fault-analysis.md`
+
+### REF-NFPA-002 — NFPA 70E, Standard for Electrical Safety in the Workplace
+
+* **Title:** *NFPA 70E, Standard for Electrical Safety in the Workplace* —
+  National Fire Protection Association
+* **URL:** <https://www.nfpa.org/product/nfpa-70e-standard/p0070ecode>
+* **Status:** `VERIFIED (BLOCKED)` — existence, scope, and the 3-year revision
+  cycle confirmed via secondary bookseller listings on 2026-09-16; nfpa.org
+  itself returned only page chrome. **Current governing edition as of this
+  writing (2026-09-16) is ambiguous from available sources** — bookseller
+  listings show both a 2024 edition and a forthcoming 2027 edition; do not
+  assert a specific "current" edition number without confirming against
+  nfpa.org directly. Tracked as `TODO.md` §0.8.
+* **Applied:** Governs electrical safety work practices, arc-flash and shock
+  risk assessment requirements, and PPE category selection — cited generally
+  as the authority for the *work-practice* side of arc-flash hazard
+  management, distinct from IEEE 1584's *calculation* method
+  [REF-IEEE-001].
+* **Cited in:**
+  `skills/electrical-engineering/references/arc-flash-and-safety.md`
+
+### REF-IEEE-001 — IEEE 1584-2018, Guide for Performing Arc-Flash Hazard Calculations
+
+* **Title:** *IEEE 1584-2018 — IEEE Guide for Performing Arc-Flash Hazard
+  Calculations*
+* **URL:** <https://standards.ieee.org/standard/1584-2018.html>
+* **Status:** `VERIFIED` — title, designation, and scope read directly from
+  the IEEE Standards Association page on 2026-09-16.
+* **Applied:** Defines the mathematical-model method for arc-flash incident
+  energy and arc-flash boundary calculation. **Scope, as stated on the
+  standard's own page: three-phase AC systems, 208 V to 15 kV nominal;
+  explicitly excludes single-phase AC, DC systems, and short-circuit
+  studies.** A related standard, IEEE 1584.2-2025, covers arc-flash data
+  collection for systems at 1000 V and below. **The specific numeric model
+  coefficients and lookup tables in IEEE 1584-2018 are not reproduced in this
+  repository** — they are copyrighted content of a paid standard and were not
+  independently verified; `skills/electrical-engineering` states the
+  calculation *framework* only and directs the user to the current standard
+  for coefficients.
+* **Cited in:**
+  `skills/electrical-engineering/references/arc-flash-and-safety.md`
+
 ### REF-ISA-001 — ISA standards portfolio
 
 * **Title:** *Standards and Publications* — International Society of Automation
