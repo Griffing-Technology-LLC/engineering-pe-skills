@@ -44,7 +44,8 @@ Electronics, Controls, and Communications; Power); a candidate sits one. Power
 is 80 questions across a 9-hour appointment; the other two modules are 85
 questions / 9.5 hours. This skill covers Power only — signal integrity, EMC,
 and PCB-level electronics belong to `electronics-engineering` (planned,
-`TODO.md` §2.7).
+`TODO.md` §2.7); computer architecture, embedded systems, digital design,
+networks, and cybersecurity belong to `computer-engineering`.
 
 The principal SDO is **IEEE** [REF-SOC-005], publisher of the colour-book
 series applied throughout this skill: IEEE 141 (Red Book, power distribution),
