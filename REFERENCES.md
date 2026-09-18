@@ -495,6 +495,75 @@ All URLs checked 2026-08-29 unless noted otherwise.
   be
   confirmed before being cited by number. Tracked as TODO §0.7.
 
+### REF-IEEE-002 — IEEE/ANSI C63.4, Methods of Measurement of Radio-Noise Emissions
+
+* **Title:** *IEEE/ANSI C63.4-2014 — American National Standard for Methods
+  of Measurement of Radio-Noise Emissions from Low-Voltage Electrical and
+  Electronic Equipment in the Range of 9 kHz to 40 GHz*
+* **URL:** <https://standards.ieee.org/ieee/C63.4/5841/>
+* **Status:** `VERIFIED (BLOCKED)` — `standards.ieee.org` is blocked by this
+  repository's network-egress policy and could not be fetched directly.
+  Designation, exact title, and 9 kHz–40 GHz scope corroborated across
+  multiple independent secondary listings on 2026-09-18: the ANSI webstore
+  (accredited standards reseller), the IEEE Standards Association's own
+  search-result listing text, and en-standard.eu. Not independently read in
+  full; no specific numeric limit or clause from this standard is asserted
+  anywhere in this repository.
+* **Applied:** Radiated/conducted emissions **measurement methodology**
+  framework (instrumentation, test sites, procedure) — this is a test-method
+  standard, not a source of numeric emissions limits. Numeric limits for US
+  unlicensed devices come from FCC Part 15 [REF-FCC-001].
+* **Cited in:** `skills/electronics-engineering/SKILL.md`,
+  `skills/electronics-engineering/references/signal-integrity-and-emc.md`
+
+### REF-FCC-001 — 47 CFR Part 15, Radio Frequency Devices
+
+* **Title:** *47 CFR Part 15 — Radio Frequency Devices* (Subpart B —
+  Unintentional Radiators) — Federal Communications Commission,
+  Code of Federal Regulations
+* **URL:** <https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15>
+* **Status:** `VERIFIED (BLOCKED)` — `ecfr.gov` is blocked by this
+  repository's network-egress policy and could not be fetched directly.
+  Title, subpart structure (Subpart B — Unintentional Radiators), Class A
+  (industrial) / Class B (residential) classification, and the
+  certification-or-Supplier's-Declaration-of-Conformity authorization
+  framework corroborated across independent secondary listings on
+  2026-09-18: eCFR's own indexed subpart page text, govinfo.gov (the
+  official Federal Register/CFR publisher), and the FCC's own Office of
+  Engineering and Technology equipment-authorization page. **No specific
+  numeric emissions limit table value is asserted anywhere in this
+  repository** — confirm the current rule text directly before relying on
+  a limit.
+* **Applied:** US regulatory framework for unlicensed intentional,
+  unintentional, and incidental radiators — the source of the numeric
+  emissions limits that IEEE/ANSI C63.4 [REF-IEEE-002] specifies how to
+  measure.
+* **Cited in:** `skills/electronics-engineering/SKILL.md`,
+  `skills/electronics-engineering/references/signal-integrity-and-emc.md`
+
+### REF-IPC-001 — IPC-2221, Generic Standard on Printed Board Design
+
+* **Title:** *IPC-2221 — Generic Standard on Printed Board Design*
+  (current revision C) — IPC (Association Connecting Electronics
+  Industries)
+* **URL:** <https://shop.ipc.org/ipc-2221/ipc-2221-standard-only/Revision-c/english>
+* **Status:** `VERIFIED (BLOCKED)` — `ipc.org` is blocked by this
+  repository's network-egress policy and could not be fetched directly.
+  Designation and scope (generic requirements for printed-board design —
+  electrical, mechanical, thermal, environmental, and reliability —
+  foundation standard for the IPC-2220 series) corroborated across
+  independent secondary listings on 2026-09-18: IPC's own shop listing
+  text, and electronics.org's mirrored table-of-contents pages for prior
+  revisions. **No specific trace-width, spacing, or current-capacity table
+  value is asserted anywhere in this repository** — confirm the current
+  edition directly before relying on a specific number.
+* **Applied:** Framework authority for board-level conductor spacing and
+  current-carrying-capacity design rules. IPC is a distinct SDO from this
+  skill's principal sponsoring society (IEEE); cited because no IEEE
+  standard covers this specific scope.
+* **Cited in:** `skills/electronics-engineering/SKILL.md`,
+  `skills/electronics-engineering/references/analog-and-digital-circuits.md`
+
 ---
 
 ## 4. Computer engineering — standards, protocols, and foundational papers

@@ -50,6 +50,22 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
   standards (ISA-5.1, ISA-84/IEC 61511, ISA-88, ISA-95, ISA/IEC 62443) before any
   is cited by number. *(REF-ISA-001; `control-systems-engineering` currently
   cites the series only as an index entry, with in-file cautions)*
+* [ ] **0.9** — Obtain and read the actual NCEES PE Electrical and Computer —
+  Electronics, Controls, and Communications exam specification PDF
+  (`ncees.org` was blocked by this repository's network-egress policy during
+  authoring) to confirm the detailed topic breakdown and per-area question
+  weighting. Only the module name, question count (85), and appointment
+  length (9.5 hours) are currently asserted, per REF-NCEES-004's existing
+  verified scope — no topic percentage is asserted.
+  *(REF-NCEES-004; blocks a more detailed `electronics-engineering` §2.7
+  topic map, does not block the skill's current scope)*
+* [ ] **0.10** — Confirm REF-IEEE-002 (IEEE/ANSI C63.4), REF-FCC-001 (47 CFR
+  Part 15), and REF-IPC-001 (IPC-2221) by direct browser access to
+  `standards.ieee.org`, `ecfr.gov`, and `ipc.org` respectively — all three
+  are currently `VERIFIED (BLOCKED)`, corroborated only via independent
+  secondary listings because those domains were blocked by this
+  repository's network-egress policy during authoring, not because the
+  documents are unconfirmed to exist.
 * [ ] **0.8** — Confirm specific NFPA 70 (NEC) article/table numbers by browser
   against the 2026 edition (nfpa.org blocked automated retrieval), and resolve
   which NFPA 70E edition is current as of the query date (2024 vs 2027
@@ -139,9 +155,21 @@ trigger evals.
     calculation framework (verified scope, no fabricated coefficients),
     NFPA 70E work-practice requirements
   * [ ] 2.6.5 Trigger evals
-* [ ] **2.7 Electronics engineering** — IEEE; signal integrity, EMC, PCB
-  (PE Electrical and Computer — ECC module; spec PDF link now in
-  REF-NCEES-004, not yet read)
+* [x] **2.7 Electronics engineering** — IEEE; signal integrity, EMC, PCB
+  * [x] 2.7.1 `SKILL.md` — PE Electrical/Computer Electronics, Controls, and
+    Communications module standing (module name/question count/hours only;
+    detailed topic weighting not asserted, §0.9), IEEE/FCC/IPC citation
+    caveats, practice rules
+  * [x] 2.7.2 `references/signal-integrity-and-emc.md` — transmission-line
+    regime, characteristic impedance, reflections and termination,
+    crosstalk and eye diagrams, EMC emissions/immunity framework
+    (IEEE/ANSI C63.4), FCC Part 15 regulatory framework, board-level
+    grounding/shielding
+  * [x] 2.7.3 `references/analog-and-digital-circuits.md` — op-amp
+    fundamentals, filters, discrete amplifier basics, digital logic family
+    interface compatibility, ADC/DAC and aliasing, board-level power
+    regulation, digital timing margins, IPC-2221 PCB design-rule framework
+  * [ ] 2.7.4 Trigger evals
 * [x] **2.8 Naval architecture and marine** — SNAME; hydrostatics, stability,
   resistance
   * [x] 2.8.1 `SKILL.md` — PE Naval Architecture standing (no published module
@@ -203,9 +231,9 @@ trigger evals.
 * [x] **3.2a** — Canonical qualified-review notice defined in `AGENTS.md` and
   implemented in `aeronautical-engineering`
 * [~] **3.2b** — Propagate the byte-identical notice into every skill as it is
-  authored, verified by CI. **8 of 12 done** (aeronautical, mechanical,
+  authored, verified by CI. **8 of 11 done** (aeronautical, mechanical,
   statics-and-dynamics, control-systems, naval-architecture-marine,
-  thermodynamics, electrical-engineering, computer-engineering).
+  thermodynamics, electrical-engineering, electronics-engineering).
   *(gates 4.2)*
 * [ ] **3.2** — Consistent "report a result" block across all ten skills
 * [ ] **3.3** — Cross-discipline handoff guidance (e.g. aeronautical → materials

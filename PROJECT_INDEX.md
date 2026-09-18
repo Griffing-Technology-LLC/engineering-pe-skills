@@ -40,6 +40,13 @@ engineering-pe-skills/
     │       ├── arc-flash-and-safety.md         IEEE 1584 framework, 70E
     │       ├── power-systems-and-per-unit.md   Per-unit, 3-phase, xfmrs
     │       └── protection-and-fault-analysis.md  Faults, OCP, coordination
+    ├── electronics-engineering/
+    │   ├── SKILL.md                   PE Electronics/Controls/Comms standing
+    │   └── references/
+    │       ├── analog-and-digital-circuits.md  Op-amps, filters, logic,
+    │       │                                    ADC/DAC, IPC-2221 PCB rules
+    │       └── signal-integrity-and-emc.md     Transmission lines, Z0,
+    │                                            crosstalk, EMC, FCC Part 15
     ├── mechanical-engineering/
     │   ├── SKILL.md                   Three PE modules, practice rules
     │   └── references/
@@ -67,5 +74,5 @@ engineering-pe-skills/
 
 ## Planned
 
-Four further discipline skills under `skills/`, per `TODO.md` §2.5, §2.7,
+Three further discipline skills under `skills/`, per `TODO.md` §2.5,
 §2.9–2.10.
