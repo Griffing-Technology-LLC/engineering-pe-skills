@@ -34,9 +34,15 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
     directly to additively manufactured structure.
 * [ ] **0.4** — Confirm AIAA and AIChE URLs by browser (both return HTTP 403 to
   automated checks; content unconfirmed). *(REF-SOC-006, REF-SOC-007)*
-* [ ] **0.5** — Obtain and catalogue the NCEES exam specification PDF for each
+* [~] **0.5** — Obtain and catalogue the NCEES exam specification PDF for each
   discipline, to ground each skill's scope in the published exam spec rather than
-  the summary web page.
+  the summary web page. **Progress 2026-09-17:** the PE Electrical and Computer
+  landing page links all three module specs (URLs now in REF-NCEES-004); the
+  Computer Engineering spec was read in full and its eight knowledge areas
+  are reproduced in `computer-engineering/SKILL.md`. Still open: read the
+  Power spec against `electrical-engineering`, and obtain the specs for
+  Mechanical, Control Systems, Naval Architecture, Chemical, and Fire
+  Protection.
 * [ ] **0.6** — Confirm the current NCEES FE Reference Handbook version and its
   published statics/dynamics section list. *(REF-NCEES-009;
   `statics-and-dynamics` cites the handbook generally, no section by number)*
@@ -66,6 +72,15 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
   editions both appear in bookseller listings). *(REF-NFPA-001, REF-NFPA-002;
   `electrical-engineering` currently cites NEC topics without article numbers
   and flags 70E's current edition as unconfirmed)*
+* [ ] **0.9** — Read the full text of the three foundational papers catalogued
+  as `VERIFIED (BLOCKED)` for `computer-engineering` and confirm that the
+  results attributed to them appear as stated: Amdahl 1967 speed-up formula
+  (REF-PAPER-001), Liu & Layland 1973 rate-monotonic bound
+  $n(2^{1/n}-1)$ and EDF bound (REF-PAPER-002), Hamming 1950 minimum-distance
+  and check-bit statements (REF-PAPER-003). ACM DL and IEEE Xplore block
+  automated retrieval; use an institutional or personal subscription. Until
+  closed, the skill presents the results as standard textbook material and
+  names the papers without page or theorem numbers.
 
 ## 1. Repository infrastructure
 
@@ -181,6 +196,33 @@ trigger evals.
   * [x] 2.11.4 `references/fluid-mechanics.md` — statics, continuity, energy
     equation, Reynolds/Froude, pipe flow
   * [ ] 2.11.5 Trigger evals
+* [x] **2.12 Computer engineering** — IEEE; PE Electrical and Computer —
+  Computer Engineering module (spec read in full 2026-09-17)
+  * [x] 2.12.1 `SKILL.md` — module standing with the eight spec knowledge
+    areas and question ranges, IEEE/IETF/NIST/UEFI citation basis, practice
+    rules (representation, prefix convention, timing corner, bounded
+    real-time, error-control blind spots, threat model, integrity level,
+    no-TBD budgets)
+  * [x] 2.12.2 `references/data-representation-and-error-control.md` —
+    integer/fixed-point/endianness, IEEE 754-2019, character encoding and
+    line codes, parity/checksum/CRC/Hamming/SECDED selection, compression
+  * [x] 2.12.3 `references/architecture-and-systems-software.md` — CPI and
+    speed-up, pipelining and hazards, AMAT and cache organisation, virtual
+    memory, RAID/NAS/SAN, flash endurance, embedded interfacing and fault
+    tolerance, RMS/EDF schedulability, interrupts, virtualisation, UEFI and
+    SP 800-193 boot resiliency
+  * [x] 2.12.4 `references/digital-design-and-timing.md` — combinational
+    and sequential design, FSMs, setup/hold with skew and jitter,
+    metastability MTBF and CDC, hazards, logic levels/fan-out/thermal,
+    LVDS/CAN/RS-485/Ethernet signalling, ADC/DAC, PLD/FPGA/ASIC/PLC,
+    IEEE 1149.1 boundary scan and DFT
+  * [x] 2.12.5 `references/networks-security-and-quality.md` — RFC 1122
+    layering, IP/TCP/Ethernet, network design and test, software design and
+    fundamentals, NIST CSF 2.0 / SP 800-160 / SP 800-82 / SP 800-193 /
+    FIPS 140-3 security practice, QA, IEEE 1012-2024 V&V
+  * [ ] 2.12.6 §0.9 open (paper full texts) — does not block the skill's
+    method content, which is presented as standard material
+  * [ ] 2.12.7 Trigger evals
 
 ## 3. Cross-cutting
 

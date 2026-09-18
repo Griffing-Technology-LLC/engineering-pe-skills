@@ -21,6 +21,13 @@ engineering-pe-skills/
     │       ├── loads-and-factors.md   Limit/ultimate, V-n, gust, MS, joints
     │       ├── propulsion.md          Momentum theory, prop, EDF, matching
     │       └── weight-and-balance.md  CG envelope, neutral point, static margin
+    ├── computer-engineering/
+    │   ├── SKILL.md                   PE Computer Eng. module standing, rules
+    │   └── references/
+    │       ├── architecture-and-systems-software.md   CPI, cache, RTOS, boot
+    │       ├── data-representation-and-error-control.md  Numbers, 754, CRC/ECC
+    │       ├── digital-design-and-timing.md   Logic, setup/hold, CDC, ADC, DFT
+    │       └── networks-security-and-quality.md  TCP/IP, NIST, V&V
     ├── control-systems-engineering/
     │   ├── SKILL.md                   ISA role, practice rules, loop workflow
     │   └── references/

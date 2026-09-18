@@ -66,9 +66,25 @@ All URLs checked 2026-08-29 unless noted otherwise.
 * **Status:** `VERIFIED`
 * **Applied:** Module structure — Computer Engineering; **Electronics, Controls,
   and Communications**; Power. Power is 80 questions / 9 hours; the other two
-  are
-  85 questions / 9.5 hours.
+  are 85 questions / 9.5 hours. Re-verified 2026-09-17: the landing page links
+  the three module specification PDFs directly —
+  * Computer Engineering (effective October 2025):
+    <https://ncees.org/wp-content/uploads/2025/01/FINAL_PE-Electrical_Computer_Oct_2025.pdf>
+    — **read in full 2026-09-17.** Defines eight knowledge areas with question
+    ranges: 1 Data Representation (7–11); 2 Computer Architecture (12–18);
+    3 Systems Software (9–14); 4 Application Development (8–12); 5 Digital
+    Devices (8–12); 6 Digital Electronics (8–12); 7 Computer Networks and
+    Cybersecurity (11–17); 8 Quality Processes (7–11). States the exam is
+    closed book with an electronic reference and "uses both the International
+    System of units (SI) and the US Customary System (USCS)."
+  * Electronics, Controls, and Communications (effective April 2026):
+    <https://ncees.org/wp-content/uploads/2025/10/PE-Electrical_ECC_April_2026.pdf>
+    — link verified, not yet read (for `electronics-engineering`, TODO §2.7).
+  * Power (effective October 2025):
+    <https://ncees.org/wp-content/uploads/2025/04/PE-Electrical_Power_Oct_2025.pdf>
+    — link verified, not yet read against `electrical-engineering` (TODO §0.5).
 * **Cited in:** `skills/electrical-engineering/SKILL.md`,
+  `skills/computer-engineering/SKILL.md`,
   `skills/electronics-engineering/SKILL.md`
 
 ### REF-NCEES-005 — PE Control Systems exam specification
@@ -176,6 +192,7 @@ All URLs checked 2026-08-29 unless noted otherwise.
   engineering; publisher of the IEEE colour-book series (IEEE 141, 142, 242,
   399, 493, 1584) and IEEE 802.
 * **Cited in:** `skills/electrical-engineering/SKILL.md`,
+  `skills/computer-engineering/SKILL.md`,
   `skills/electronics-engineering/SKILL.md`
 
 ### REF-SOC-006 — AIChE (American Institute of Chemical Engineers)
@@ -546,6 +563,280 @@ All URLs checked 2026-08-29 unless noted otherwise.
   standard covers this specific scope.
 * **Cited in:** `skills/electronics-engineering/SKILL.md`,
   `skills/electronics-engineering/references/analog-and-digital-circuits.md`
+
+---
+
+## 4. Computer engineering — standards, protocols, and foundational papers
+
+All URLs in this section checked 2026-09-17.
+
+### REF-IEEE-002 — IEEE 754-2019, Standard for Floating-Point Arithmetic
+
+* **Title:** *IEEE 754-2019 — IEEE Standard for Floating-Point Arithmetic*
+  (supersedes IEEE 754-2008)
+* **URL:** <https://standards.ieee.org/ieee/754/6210/>
+* **Status:** `VERIFIED` — designation, title, active status, approval
+  (2019-06-13) and publication (2019-07-22) dates, and scope read directly
+  from the IEEE SA page.
+* **Applied:** Scope, quoted: "This standard specifies interchange and
+  arithmetic formats and methods for binary and decimal floating-point
+  arithmetic in computer programming environments. This standard specifies
+  exception conditions and their default handling." Cited for the existence
+  of binary and decimal formats, the exception classes, and the general
+  structure of a binary interchange format. **The standard's body text
+  (format tables, rounding rules) was not read** — the binary32/binary64
+  field widths quoted in the skill are standard knowledge consistent with the
+  format and are not attributed to a clause number.
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/data-representation-and-error-control.md`
+
+### REF-IEEE-003 — IEEE 802.3-2022, Standard for Ethernet
+
+* **Title:** *IEEE 802.3-2022 — IEEE Standard for Ethernet*
+* **URL:** <https://standards.ieee.org/ieee/802.3/10422/>
+* **Status:** `VERIFIED` — designation, title, active status, publication
+  date (2022-07-29), and scope read directly from the IEEE SA page.
+* **Applied:** Scope, quoted in part: "Ethernet local area network operation
+  is specified for selected speeds of operation from 1 Mb/s to 400 Gb/s using
+  a common media access control (MAC) specification ... The Carrier Sense
+  Multiple Access with Collision Detection (CSMA/CD) MAC protocol specifies
+  shared medium (half duplex) operation, as well as full duplex operation."
+  Cited as the link-layer authority for Ethernet; no clause number asserted.
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/digital-design-and-timing.md`,
+  `skills/computer-engineering/references/networks-security-and-quality.md`
+
+### REF-IEEE-004 — IEEE 1149.1-2013, Test Access Port and Boundary-Scan Architecture
+
+* **Title:** *IEEE 1149.1-2013 — IEEE Standard for Test Access Port and
+  Boundary-Scan Architecture* (supersedes IEEE 1149.1-2001)
+* **URL:** <https://standards.ieee.org/ieee/1149.1/4484/>
+* **Status:** `VERIFIED` — designation, title, publication date (2013-05-13),
+  and scope read directly from the IEEE SA page. **IEEE SA lists the
+  standard's status as "Inactive-Reserved" (inactivated 2024-03-21)**, not
+  "Active"; the 2001 edition's page (<https://standards.ieee.org/ieee/1149.1/1728/>)
+  lists it as superseded by the 2013 edition. No later edition was found. The
+  skill reports this status verbatim rather than calling the standard
+  "current."
+* **Applied:** Scope, quoted in part: defines "circuitry that may be built
+  into an integrated circuit to assist in the test, maintenance and support of
+  assembled printed circuit boards and the test of internal circuits," with a
+  standard test interface and a boundary-scan register. Cited for the
+  existence and purpose of boundary scan; no clause number asserted.
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/digital-design-and-timing.md`
+
+### REF-IEEE-005 — IEEE 1012-2024, System, Software, and Hardware V&V
+
+* **Title:** *IEEE 1012-2024 — IEEE Standard for System, Software, and
+  Hardware Verification and Validation*
+* **URL:** <https://standards.ieee.org/ieee/1012/7324/>
+* **Status:** `VERIFIED` — designation, title, active status, publication
+  date (2025-08-22), and scope read directly from the IEEE SA page.
+* **Applied:** Scope, quoted in part: V&V processes "are used to determine
+  whether the development products of a given activity conform to the
+  requirements of that activity and whether the product satisfies its
+  intended use and user needs. V&V life cycle process requirements are
+  specified for different integrity levels. ... The term software also
+  includes firmware and microcode." Cited for the integrity-level framing and
+  the verification/validation distinction; no clause number asserted.
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/networks-security-and-quality.md`
+
+### REF-IETF-001 — RFC 791, Internet Protocol
+
+* **Title:** *RFC 791 — Internet Protocol* (DARPA Internet Program Protocol
+  Specification, September 1981)
+* **URL:** <https://www.rfc-editor.org/rfc/rfc791>
+* **Status:** `VERIFIED` — full text retrieved from the RFC Editor
+  2026-09-17.
+* **Applied:** Header fields Time to Live ("an indication of an upper bound
+  on the lifetime of an internet datagram") and Header Checksum ("a
+  verification that the information used in processing internet datagram has
+  been transmitted correctly" — header only); fragmentation when a datagram
+  exceeds the local network's maximum packet size; network byte order.
+* **Cited in:**
+  `skills/computer-engineering/references/data-representation-and-error-control.md`,
+  `skills/computer-engineering/references/networks-security-and-quality.md`
+
+### REF-IETF-002 — RFC 1122, Requirements for Internet Hosts — Communication Layers
+
+* **Title:** *RFC 1122 — Requirements for Internet Hosts — Communication
+  Layers* (October 1989)
+* **URL:** <https://www.rfc-editor.org/rfc/rfc1122>
+* **Status:** `VERIFIED` — full text retrieved from the RFC Editor
+  2026-09-17.
+* **Applied:** §1.1.3 *Internet Protocol Suite* — the four-layer model:
+  Application Layer, Transport Layer, Internet Layer, Link Layer.
+* **Cited in:**
+  `skills/computer-engineering/references/networks-security-and-quality.md`
+
+### REF-IETF-003 — RFC 9293, Transmission Control Protocol (TCP)
+
+* **Title:** *RFC 9293 — Transmission Control Protocol (TCP)* (August 2022;
+  obsoletes RFC 793, 879, 2873, 6093, 6429, 6528, 6691)
+* **URL:** <https://www.rfc-editor.org/rfc/rfc9293>
+* **Status:** `VERIFIED` — full text retrieved from the RFC Editor
+  2026-09-17; section numbers confirmed from the retrieved text.
+* **Applied:** §3.4 *Sequence Numbers*; §3.5 *Establishing a Connection* —
+  "The 'three-way handshake' is the procedure used to establish a
+  connection" and "The principal reason for the three-way handshake is to
+  prevent old duplicate connection initiations from causing confusion."
+* **Cited in:**
+  `skills/computer-engineering/references/networks-security-and-quality.md`
+
+### REF-NIST-001 — NIST SP 800-82 Rev. 3, Guide to Operational Technology (OT) Security
+
+* **Title:** *NIST Special Publication 800-82 Revision 3 — Guide to
+  Operational Technology (OT) Security*, September 2023
+* **URL:** <https://csrc.nist.gov/pubs/sp/800/82/r3/final> —
+  DOI <https://doi.org/10.6028/NIST.SP.800-82r3>
+* **Status:** `VERIFIED` — designation, title, date, final status, and
+  abstract read directly from the NIST CSRC page.
+* **Applied:** Abstract — guidance "on how to secure operational technology
+  (OT) while addressing their unique performance, reliability, and safety
+  requirements"; OT defined as programmable systems and devices that
+  "interact with the physical environment"; the document "provides an
+  overview of OT and typical system topologies, identifies common threats and
+  vulnerabilities to these systems, and provides recommended security
+  countermeasures." **Body sections were not read; no section number is
+  asserted.**
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/networks-security-and-quality.md`
+
+### REF-NIST-002 — NIST SP 800-193, Platform Firmware Resiliency Guidelines
+
+* **Title:** *NIST Special Publication 800-193 — Platform Firmware Resiliency
+  Guidelines*, May 2018
+* **URL:** <https://csrc.nist.gov/pubs/sp/800/193/final> —
+  DOI <https://doi.org/10.6028/NIST.SP.800-193>
+* **Status:** `VERIFIED` — designation, title, date, final status, and
+  abstract read directly from the NIST CSRC page.
+* **Applied:** Abstract — "security mechanisms for protecting the platform
+  against unauthorized changes, detecting unauthorized changes that occur,
+  and recovering from attacks rapidly and securely" (the
+  protect / detect / recover framing applied in the skill). **Body sections
+  were not read; no section number is asserted.**
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/architecture-and-systems-software.md`,
+  `skills/computer-engineering/references/networks-security-and-quality.md`
+
+### REF-NIST-003 — NIST SP 800-160 Vol. 1 Rev. 1, Engineering Trustworthy Secure Systems
+
+* **Title:** *NIST Special Publication 800-160 Volume 1 Revision 1 —
+  Engineering Trustworthy Secure Systems*, November 2022
+* **URL:** <https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final> —
+  DOI <https://doi.org/10.6028/NIST.SP.800-160v1r1>
+* **Status:** `VERIFIED` — designation, title, date, final status, and
+  abstract read directly from the NIST CSRC page.
+* **Applied:** Abstract — "a basis for establishing principles, concepts,
+  activities, and tasks for engineering trustworthy secure systems" applied
+  "within systems engineering efforts." Cited as the systems-security-
+  engineering authority; **no section number is asserted.**
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/networks-security-and-quality.md`
+
+### REF-NIST-004 — NIST Cybersecurity Framework (CSF) 2.0
+
+* **Title:** *The NIST Cybersecurity Framework (CSF) 2.0*, NIST CSWP 29,
+  February 2024
+* **URL:** <https://www.nist.gov/cyberframework> (programme page) —
+  document DOI <https://doi.org/10.6028/NIST.CSWP.29>, PDF
+  <https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf>
+* **Status:** `VERIFIED` — the CSWP 29 PDF was retrieved and its text read
+  2026-09-17; the six Functions were confirmed from the document body, not
+  the landing page (which does not enumerate them).
+* **Applied:** The six CSF Core Functions, quoted with their one-line
+  definitions from the document: GOVERN (GV), IDENTIFY (ID), PROTECT (PR),
+  DETECT (DE), RESPOND (RS), RECOVER (RC).
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/networks-security-and-quality.md`
+
+### REF-NIST-005 — FIPS 140-3, Security Requirements for Cryptographic Modules
+
+* **Title:** *FIPS PUB 140-3 — Security Requirements for Cryptographic
+  Modules*, March 22, 2019
+* **URL:** <https://csrc.nist.gov/pubs/fips/140-3/final> —
+  DOI <https://doi.org/10.6028/NIST.FIPS.140-3>
+* **Status:** `VERIFIED` — designation, title, date, final status, and
+  abstract read directly from the NIST CSRC page.
+* **Applied:** Abstract — requirements for "cryptographic-based security
+  systems to protect sensitive information in computer and telecommunication
+  systems"; "four increasing, qualitative levels of security." Cited so the
+  skill can defer cryptographic-module and algorithm-approval questions to
+  NIST rather than assert them. **Algorithm-specific FIPS/SP documents are
+  not catalogued and must be added before any algorithm is recommended by
+  name.**
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/networks-security-and-quality.md`
+
+### REF-UEFI-001 — UEFI Specification
+
+* **Title:** *Unified Extensible Firmware Interface (UEFI) Specification*,
+  Version 2.11 (released December 2024) — UEFI Forum
+* **URL:** <https://uefi.org/specifications>
+* **Status:** `VERIFIED` — the specifications index page was retrieved
+  2026-09-17 and lists Version 2.11 (December 2024) as the latest UEFI
+  Specification release, alongside 2.10 Errata A (August 2024). **The
+  specification body was not read; no section number is asserted.**
+* **Applied:** Existence and current version of the UEFI specification as
+  the firmware–OS-loader interface standard on general-purpose platforms.
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/architecture-and-systems-software.md`
+
+### REF-PAPER-001 — Amdahl (1967), single-processor validity / speed-up
+
+* **Title:** G. M. Amdahl, "Validity of the single processor approach to
+  achieving large scale computing capabilities," *Proceedings of the April
+  18–20, 1967, Spring Joint Computer Conference (AFIPS '67 Spring)*, 1967.
+* **URL:** <https://doi.org/10.1145/1465482.1465560>
+* **Status:** `VERIFIED (BLOCKED)` — bibliographic metadata (title, author,
+  venue, year) confirmed 2026-09-17 from the CrossRef DOI registry
+  (`api.crossref.org`); the ACM Digital Library returns HTTP 403 to automated
+  retrieval and the **full text was not read.**
+* **Applied:** The speed-up bound generally called "Amdahl's law,"
+  $S = 1/((1-f) + f/k)$. **The attribution of this specific formula to the
+  paper's text is `REQUIRES VERIFICATION`** — the skill presents the formula
+  as the standard result and names the paper, but does not cite a page.
+  Tracked as `TODO.md` §0.9.
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/architecture-and-systems-software.md`
+
+### REF-PAPER-002 — Liu and Layland (1973), hard-real-time scheduling
+
+* **Title:** C. L. Liu and J. W. Layland, "Scheduling Algorithms for
+  Multiprogramming in a Hard-Real-Time Environment," *Journal of the ACM*,
+  vol. 20, no. 1, January 1973.
+* **URL:** <https://doi.org/10.1145/321738.321743>
+* **Status:** `VERIFIED (BLOCKED)` — bibliographic metadata confirmed
+  2026-09-17 from the CrossRef DOI registry; ACM Digital Library returns
+  HTTP 403 to automated retrieval and the **full text was not read.**
+* **Applied:** The rate-monotonic utilisation bound
+  $U \leq n(2^{1/n} - 1)$ and the earliest-deadline-first bound $U \leq 1$
+  for independent periodic tasks. **Attribution of these specific theorems
+  to the paper's text is `REQUIRES VERIFICATION`**; no theorem number is
+  cited. Tracked as `TODO.md` §0.9.
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/architecture-and-systems-software.md`
+
+### REF-PAPER-003 — Hamming (1950), error detecting and correcting codes
+
+* **Title:** R. W. Hamming, "Error Detecting and Error Correcting Codes,"
+  *Bell System Technical Journal*, vol. 29, no. 2, April 1950.
+* **URL:** <https://doi.org/10.1002/j.1538-7305.1950.tb00463.x> (resolves to
+  IEEE Xplore document 6772729)
+* **Status:** `VERIFIED (BLOCKED)` — bibliographic metadata confirmed
+  2026-09-17 from the CrossRef DOI registry; IEEE Xplore returns an anti-bot
+  challenge (HTTP 202) to automated retrieval and the **full text was not
+  read.**
+* **Applied:** Origin of single-error-correcting systematic codes and the
+  minimum-distance concept. **Attribution of the specific distance/
+  correction statements ($d-1$ detect, $\lfloor(d-1)/2\rfloor$ correct;
+  $2^r - r - 1$ data bits for $r$ check bits) to the paper's text is
+  `REQUIRES VERIFICATION`**; the skill presents them as standard coding
+  theory. Tracked as `TODO.md` §0.9.
+* **Cited in:** `skills/computer-engineering/SKILL.md`,
+  `skills/computer-engineering/references/data-representation-and-error-control.md`
 
 ---
 
