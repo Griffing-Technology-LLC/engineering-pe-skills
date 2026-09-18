@@ -3,7 +3,7 @@
 Agent Skills for licensed-discipline engineering practice, with authoritative
 citations and explicit calculation methods.
 
-Eleven skills covering the engineering disciplines needed for real hardware
+Twelve skills covering the engineering disciplines needed for real hardware
 design.
 Each is aligned — where an alignment honestly exists — to an
 [NCEES PE discipline](https://ncees.org/exams/pe-exam/), and each cites its
@@ -50,6 +50,7 @@ That behaviour is a fixed condition of the skills, not a configurable option.
 | `chemical-engineering` | Chemical | AIChE / CCPS |
 | `electrical-engineering` | Electrical and Computer: Power | IEEE |
 | `electronics-engineering` | Electrical and Computer: Electronics, Controls, and Communications | IEEE |
+| `computer-engineering` | Electrical and Computer: Computer Engineering | IEEE |
 | `naval-architecture-marine` | Naval Architecture and Marine | SNAME |
 | `fire-protection-engineering` | Fire Protection | SFPE / NFPA |
 | `materials-and-additive-manufacturing` | Metallurgical and Materials (partial) | ASTM / ASM |
@@ -93,9 +94,10 @@ structure and current completion state.
 | `naval-architecture-marine` | Draft — SKILL.md + 2 reference files |
 | `thermodynamics` | Draft — SKILL.md + 3 reference files |
 | `electrical-engineering` | Draft — SKILL.md + 3 reference files |
+| `computer-engineering` | Draft — SKILL.md + 4 reference files |
 | remaining four | Not started |
 
-All seven drafts are pending licensed PE review (`TODO.md` §4.1) before
+All eight drafts are pending licensed PE review (`TODO.md` §4.1) before
 publication.
 
 ## Attribution
