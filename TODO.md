@@ -94,8 +94,9 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
 * [x] **1.3** — `AGENTS.md` authoritative agent instructions + `CLAUDE.md` stub
 * [x] **1.4** — `README.md` with discipline table and honest alignment exceptions
 * [x] **1.5** — `TODO.md` WBS
-* [ ] **1.6** — `PROJECT_INDEX.md` maintained as files are added
-* [ ] **1.7** — `CLAUDE-MEMORY.md` agent audit mirror
+* [x] **1.6** — `PROJECT_INDEX.md` maintained as files are added (current
+  as of 2026-09-19; re-check on every file add/archive)
+* [x] **1.7** — `CLAUDE-MEMORY.md` agent audit mirror — created 2026-09-19
 * [~] **1.8** — CI gates. **Done 2026-09-19:** markdownlint (all rules);
   skill-invariants job — notice byte-identical to `.github/notice.txt`
   (which is itself diffed against `AGENTS.md`), `ncees_alignment`,

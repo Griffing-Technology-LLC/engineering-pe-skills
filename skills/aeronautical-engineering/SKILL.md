@@ -7,7 +7,7 @@ metadata:
     discipline: Aeronautical Engineering
     ncees_alignment: "NONE — no NCEES PE discipline exists for aeronautical engineering. See 'Licensure standing' below."
     sponsoring_society: AIAA (American Institute of Aeronautics and Astronautics)
-    version: 0.1.0
+    version: 0.2.0
     review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 

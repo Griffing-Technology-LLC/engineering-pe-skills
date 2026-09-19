@@ -7,7 +7,7 @@ metadata:
     discipline: Mechanical Engineering
     ncees_alignment: "PE Mechanical — three modules: HVAC and Refrigeration; Machine Design and Materials; Thermal and Fluid Systems"
     sponsoring_society: ASME (American Society of Mechanical Engineers)
-    version: 0.1.0
+    version: 0.2.0
     review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 

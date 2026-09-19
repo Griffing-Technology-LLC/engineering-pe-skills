@@ -7,7 +7,7 @@ metadata:
     discipline: Naval Architecture and Marine Engineering
     ncees_alignment: "PE Naval Architecture and Marine Engineering — 85 questions, 9.5-hour appointment [REF-NCEES-008]. NCEES's exam landing page does not publish a named module breakdown the way PE Mechanical does; see 'Examination standing' below."
     sponsoring_society: SNAME (Society of Naval Architects and Marine Engineers)
-    version: 0.1.0
+    version: 0.2.0
     review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 

@@ -7,7 +7,7 @@ metadata:
     discipline: Thermodynamics, Heat Transfer, and Fluid Mechanics (engineering thermal-fluid sciences)
     ncees_alignment: "FE-LEVEL — not a PE discipline on its own. Thermodynamics, heat transfer, and fluid mechanics are Fundamentals of Engineering subject matter that reappears across multiple PE specifications. See 'Examination standing' below."
     sponsoring_society: "None — foundational thermal-fluid sciences; NCEES FE Reference Handbook is the governing reference"
-    version: 0.1.0
+    version: 0.2.0
     review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 

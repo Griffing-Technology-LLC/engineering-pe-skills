@@ -7,7 +7,7 @@ metadata:
     discipline: Electrical Engineering (Power)
     ncees_alignment: "PE Electrical and Computer — Power module: 80 questions, 9-hour appointment [REF-NCEES-004]"
     sponsoring_society: IEEE (Institute of Electrical and Electronics Engineers)
-    version: 0.1.0
+    version: 0.2.0
     review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 

@@ -5,6 +5,8 @@ Active files in `engineering-pe-skills`. Archived files move to `ARCHIVE_INDEX.m
 ```text
 engineering-pe-skills/
 ├── AGENTS.md                          Authoritative AI-agent instructions
+├── CHANGELOG.md                       Consumer-facing change log (Keep a Changelog)
+├── CLAUDE-MEMORY.md                   Claude agent memory audit mirror
 ├── CLAUDE.md                          Stub → AGENTS.md
 ├── LICENSE                            CC BY-ND 4.0, Griffing Technology LLC
 ├── PROJECT_INDEX.md                   This file

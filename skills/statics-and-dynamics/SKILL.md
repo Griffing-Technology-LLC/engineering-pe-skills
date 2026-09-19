@@ -7,7 +7,7 @@ metadata:
     discipline: Statics and Dynamics (engineering mechanics)
     ncees_alignment: "FE-LEVEL — not a PE discipline. Statics and dynamics are Fundamentals of Engineering subject matter appearing across several PE specifications. See 'Examination standing' below."
     sponsoring_society: "None — foundational engineering mechanics; NCEES FE Reference Handbook is the governing reference"
-    version: 0.1.0
+    version: 0.2.0
     review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 
