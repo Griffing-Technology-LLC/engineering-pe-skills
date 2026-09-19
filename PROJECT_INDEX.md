@@ -12,7 +12,8 @@ engineering-pe-skills/
 ├── REFERENCES.md                      Citation catalog with verification status
 ├── TODO.md                            Work Breakdown Structure
 ├── .markdownlint-cli2.jsonc           Lint config (MD013 tuned for tables/code)
-├── .github/workflows/validate.yml     CI: lint + mandatory-notice enforcement
+├── .github/notice.txt                 Canonical review notice (CI diff target)
+├── .github/workflows/validate.yml     CI: lint + skill-invariants (notice/licence/status)
 └── skills/
     ├── aeronautical-engineering/
     │   ├── SKILL.md                   Licensure standing, practice rules

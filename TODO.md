@@ -96,8 +96,11 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
 * [x] **1.5** — `TODO.md` WBS
 * [ ] **1.6** — `PROJECT_INDEX.md` maintained as files are added
 * [ ] **1.7** — `CLAUDE-MEMORY.md` agent audit mirror
-* [ ] **1.8** — CI: markdownlint (all 60 rules) + link validation + secret scan
-  and a mandatory-notice presence check across every `SKILL.md`
+* [~] **1.8** — CI gates. **Done 2026-09-19:** markdownlint (all rules);
+  skill-invariants job — notice byte-identical to `.github/notice.txt`
+  (which is itself diffed against `AGENTS.md`), `ncees_alignment`,
+  `license: CC-BY-ND-4.0`, `review_status` present. **Open:** link
+  validation, secret scan.
 * [ ] **1.9** — Skill trigger-description evals per `skill-creator` §"Optimize
   description", 20 queries per skill, before publication
 * [ ] **1.9b** — Notice-emission evals: for each skill, multi-turn transcripts

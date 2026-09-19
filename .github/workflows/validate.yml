@@ -1,8 +1,11 @@
 name: validate
 
-# Lint, and enforce the two repository invariants that cannot be left to review:
-# every skill carries the qualified-review notice, and every skill declares its
-# NCEES alignment explicitly (including "NONE" where no alignment exists).
+# Lint, and enforce the repository invariants that cannot be left to review:
+#   1. every skill carries the qualified-review notice, byte-identical to the
+#      canonical copy in .github/notice.txt (which mirrors AGENTS.md);
+#   2. every skill declares its NCEES alignment explicitly (including "NONE");
+#   3. every skill declares the repository licence and its review status.
+# Link validation and secret scanning are still open — TODO.md §1.8.
 
 on:
     push:
@@ -21,11 +24,19 @@ jobs:
             - name: Run markdownlint-cli2
               run: npx -y markdownlint-cli2 "**/*.md"
 
-    mandatory-notice:
-        name: qualified-review notice present in every skill
+    skill-invariants:
+        name: notice byte-identical, licence and review status declared
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
+            - name: Canonical notice mirrors AGENTS.md
+              run: |
+                  set -euo pipefail
+                  # .github/notice.txt is the CI copy; AGENTS.md is the human
+                  # copy. They must not drift from each other either.
+                  awk '/^Each `SKILL.md` carries a/{f=1;next} f&&/^> /{print} f&&/^Rules for the notice/{exit}' AGENTS.md \
+                      | diff - .github/notice.txt \
+                      || { echo "::error file=.github/notice.txt::canonical notice differs from AGENTS.md"; exit 1; }
             - name: Check every SKILL.md
               run: |
                   set -euo pipefail
@@ -33,24 +44,37 @@ jobs:
                   found=0
                   while IFS= read -r f; do
                       found=$((found + 1))
-                      if ! grep -q "ENGINEERING REVIEW REQUIRED" "$f"; then
-                          echo "::error file=$f::missing the mandatory qualified-review notice"
-                          status=1
-                          continue
-                      fi
-                      # The notice must precede every other section of the skill.
+                      # 1a. The notice section must be the first '##' section.
                       notice_line=$(grep -n "^## Mandatory notice" "$f" | head -1 | cut -d: -f1 || true)
                       first_h2=$(grep -n "^## " "$f" | head -1 | cut -d: -f1)
                       if [ -z "$notice_line" ] || [ "$notice_line" != "$first_h2" ]; then
                           echo "::error file=$f::the mandatory notice must be the first '##' section"
                           status=1
+                          continue
                       fi
-                      # Alignment must be stated, never implied.
-                      if ! grep -q "ncees_alignment:" "$f"; then
+                      # 1b. The blockquote under it must be byte-identical to the
+                      #     canonical copy — a substring grep would let a reworded
+                      #     or truncated notice ship.
+                      if ! awk '/^## Mandatory notice/{f=1;next} f&&/^> /{print} f&&/^## /{exit}' "$f" \
+                              | diff -q - .github/notice.txt >/dev/null; then
+                          echo "::error file=$f::notice text drifted from the canonical wording in .github/notice.txt"
+                          status=1
+                      fi
+                      # 2. Alignment must be stated, never implied.
+                      if ! grep -q "^    ncees_alignment:" "$f"; then
                           echo "::error file=$f::frontmatter is missing ncees_alignment"
                           status=1
                       fi
-                  done < <(find skills -name SKILL.md)
+                      # 3. Licence and review status travel with the installed file.
+                      if ! grep -q "^license: CC-BY-ND-4.0$" "$f"; then
+                          echo "::error file=$f::frontmatter license must be exactly 'CC-BY-ND-4.0'"
+                          status=1
+                      fi
+                      if ! grep -q "^    review_status: \"\(UNREVIEWED DRAFT\|REVIEWED\)" "$f"; then
+                          echo "::error file=$f::frontmatter is missing metadata.review_status (UNREVIEWED DRAFT … or REVIEWED …)"
+                          status=1
+                      fi
+                  done < <(find skills -name SKILL.md | sort)
                   if [ "$found" -eq 0 ]; then
                       echo "::error::no SKILL.md files found"
                       exit 1

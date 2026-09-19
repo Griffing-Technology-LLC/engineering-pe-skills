@@ -58,7 +58,9 @@ Rules for the notice:
   fixed condition of the skill.
 * Because skills install independently, the text is **duplicated in full** in
   each `SKILL.md` rather than referenced from a shared file. Keep the copies
-  byte-identical.
+  byte-identical: CI diffs each skill's blockquote against
+  `.github/notice.txt`, and diffs that file against this section, so a
+  change to the wording is made here first and then propagated everywhere.
 
 Rationale: these skills produce structural, electrical, thermal, control, and
 fire-protection results that a reader may act on. In every discipline this
@@ -111,7 +113,11 @@ skills/<discipline>/
 * 4-space indentation in all code regardless of language.
 * Verbose commenting, in each language's idiom.
 * Static analysis before any commit.
-* All PRs pass CI lint and security checks before merge.
+* All PRs pass CI before merge. Today CI runs markdownlint (all rules) and
+  the skill-invariants job (`.github/workflows/validate.yml`: notice
+  byte-identical to `.github/notice.txt`, `ncees_alignment`, `license`,
+  `review_status`). Link validation and secret scanning are **not yet
+  wired** — `TODO.md` §1.8.
 
 ## Maintenance
 
