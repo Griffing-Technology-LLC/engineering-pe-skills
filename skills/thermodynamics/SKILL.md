@@ -1,7 +1,7 @@
 ---
 name: thermodynamics
 description: Thermodynamics, heat transfer, and fluid mechanics at FE level — properties of pure substances, first and second law, entropy, power and refrigeration cycles, conduction/convection/radiation heat transfer, fluid statics, continuity and the energy equation, dimensional analysis, and internal pipe flow. Use when computing cycle efficiency or COP, sizing a heat exchanger by LMTD or NTU, finding conductive or convective heat loss, applying Bernoulli's equation or the energy equation, computing head loss in a pipe, finding a Reynolds or Froude number, or working any FE-level thermal-fluid problem that feeds mechanical, chemical, aeronautical, naval architecture, or fire protection design.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Thermodynamics, Heat Transfer, and Fluid Mechanics (engineering thermal-fluid sciences)

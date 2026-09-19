@@ -1,7 +1,7 @@
 ---
 name: electronics-engineering
 description: Electronics engineering aligned to the NCEES PE Electrical and Computer — Electronics, Controls, and Communications module — signal integrity and transmission-line analysis, EMC/EMI emissions and immunity, analog and digital circuit design, ADC/DAC and data-conversion basics, and board-level power regulation. Use when analyzing transmission-line reflections or termination, estimating crosstalk or an eye diagram, assessing EMC emissions/immunity or FCC Part 15 applicability, designing or reviewing an analog or digital circuit (amplifiers, filters, logic families), selecting an ADC/DAC, or sizing board-level power regulation. Not for power-system, protection, or arc-flash work — see `electrical-engineering` for that.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Electronics Engineering

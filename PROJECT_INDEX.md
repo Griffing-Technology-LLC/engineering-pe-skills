@@ -6,7 +6,7 @@ Active files in `engineering-pe-skills`. Archived files move to `ARCHIVE_INDEX.m
 engineering-pe-skills/
 ├── AGENTS.md                          Authoritative AI-agent instructions
 ├── CLAUDE.md                          Stub → AGENTS.md
-├── LICENSE                            MIT, Griffing Technology LLC
+├── LICENSE                            CC BY-ND 4.0, Griffing Technology LLC
 ├── PROJECT_INDEX.md                   This file
 ├── README.md                          Overview, discipline table, install
 ├── REFERENCES.md                      Citation catalog with verification status

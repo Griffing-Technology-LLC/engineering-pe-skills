@@ -1,7 +1,7 @@
 ---
 name: naval-architecture-marine
 description: Naval architecture and marine engineering — ship hydrostatics, intact stability (GZ curve, metacentric height, IMO weather criterion), trim and freeboard, hull resistance and powering, and propeller/propulsion coefficients. Use when computing displacement or buoyancy, finding the metacentric height or righting arm, checking IMO intact stability criteria, analysing trim or list, estimating hull resistance from Froude or Reynolds number, applying the ITTC-57 friction line, or sizing propulsion power for a vessel.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Naval Architecture and Marine Engineering

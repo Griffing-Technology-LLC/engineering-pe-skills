@@ -1,7 +1,7 @@
 ---
 name: control-systems-engineering
 description: Control systems engineering aligned to the NCEES PE Control Systems exam — PID tuning, loop dynamics, transfer functions, stability and frequency response, process instrumentation and P&IDs, final control elements, safety instrumented systems and SIL, and industrial control security. Use when tuning or diagnosing a control loop, building a transfer function or block diagram, checking stability or phase and gain margin, sizing a control valve or selecting a sensor, reading or drafting a P&ID, doing a SIL or LOPA assessment, or designing a feedback controller for a physical plant.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Control Systems Engineering

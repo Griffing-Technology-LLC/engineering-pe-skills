@@ -1,7 +1,7 @@
 ---
 name: electrical-engineering
 description: Electrical power engineering aligned to the NCEES PE Electrical and Computer (Power) exam — per-unit and three-phase power system analysis, transformers, short-circuit and fault current calculation, overcurrent protection and coordination, grounding and bonding, and arc-flash hazard assessment. Use when computing per-unit or three-phase power quantities, sizing or checking a transformer, running a short-circuit or fault study, selecting or coordinating overcurrent protection, checking a grounding/bonding scheme, or estimating an arc-flash incident-energy or boundary requirement.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Electrical Engineering (Power)

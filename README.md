@@ -94,10 +94,11 @@ structure and current completion state.
 | `naval-architecture-marine` | Draft — SKILL.md + 2 reference files |
 | `thermodynamics` | Draft — SKILL.md + 3 reference files |
 | `electrical-engineering` | Draft — SKILL.md + 3 reference files |
+| `electronics-engineering` | Draft — SKILL.md + 2 reference files |
 | `computer-engineering` | Draft — SKILL.md + 4 reference files |
-| remaining four | Not started |
+| remaining three | Not started |
 
-All eight drafts are pending licensed PE review (`TODO.md` §4.1) before
+All nine drafts are pending licensed PE review (`TODO.md` §4.1) before
 publication.
 
 ## Attribution
@@ -107,4 +108,41 @@ Authored by Griffing Technology LLC. Drafting assistance from **Claude Opus 5**
 agent audit trail. All engineering content is reviewed by a licensed professional
 engineer before release.
 
-Licensed [MIT](LICENSE).
+## Licence
+
+Engineering PE Skills © 2026 Griffing Technology LLC, licensed
+[CC BY-ND 4.0](LICENSE) — Creative Commons Attribution-NoDerivatives 4.0
+International. Attribution: *"Engineering PE Skills, Griffing Technology LLC,
+CC BY-ND 4.0,
+<https://github.com/Griffing-Technology-LLC/engineering-pe-skills>"*.
+
+### Why no-derivatives
+
+Each skill's safety case rests on its reviewed, cited content. A modified
+skill is no longer the reviewed artefact, but still emits the same
+qualified-review notice — so it would carry this repository's name and
+verification claims on content nobody here has checked. The licence therefore
+permits use and unmodified redistribution but not sharing of modified versions.
+
+### Licence scope — what CC BY-ND 4.0 does and does not do
+
+* **You may** copy, redistribute, and install these skills unmodified, and
+  adapt them for your own private use (LICENSE §2(a)(1)).
+* **You may not** publicly distribute a modified version (LICENSE §2(a)(1)(b),
+  §3(a)(1)). Send corrections upstream instead — see
+  [`SECURITY.md`](SECURITY.md).
+* **A locally modified copy is no longer the reviewed artefact.** It inherits
+  none of this repository's citation-verification or engineer-review claims.
+  If the mandatory notice is missing from a copy, treat its output as
+  unreviewed.
+* **Your own work is yours.** Analyses, calculations, reports, and designs
+  you produce *using* these skills are not Licensed Material or Adapted
+  Material under this licence; share them freely, subject to the
+  qualified-review requirement above. Reproducing the review notice in such
+  output is expressly permitted without further attribution.
+* **The licence does not enforce the review requirement.** CC BY-ND governs
+  copying; it neither substitutes for nor compels the qualified engineering
+  review described above, which applies to any use, modified or not.
+* **Not retroactive.** Revisions through commit `5300e0e` were published under
+  the MIT License and that grant is not withdrawn for copies already obtained;
+  CC BY-ND 4.0 applies from commit `a113589` (2026-09-19) onward.

@@ -1,7 +1,7 @@
 ---
 name: statics-and-dynamics
 description: Statics and rigid-body dynamics at FE level — free-body diagrams, equilibrium, trusses and frames, centroids and moments of inertia, friction, kinematics, Newton-Euler and work-energy methods, impulse-momentum, and vibration. Use when resolving forces or reactions, drawing a free-body diagram, analysing a truss or beam support, finding a centroid or second moment of area, checking a friction or tipping condition, computing acceleration of a linkage or mechanism, sizing for an inertial load, or working any equilibrium or rigid-body motion problem.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Statics and Dynamics (engineering mechanics)

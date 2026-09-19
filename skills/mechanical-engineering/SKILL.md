@@ -1,7 +1,7 @@
 ---
 name: mechanical-engineering
 description: Mechanical engineering design and analysis aligned to the NCEES PE Mechanical exam — machine design, stress and fatigue, shafts, bearings, gears, fasteners and bolted joints, springs, thermodynamic cycles, heat transfer, fluid systems and pumps, and HVAC. Use when sizing a shaft or bearing, checking a bolted joint or weld, computing stress concentration or fatigue life, selecting a gear or belt drive, sizing a pump or duct, analysing a thermodynamic cycle or heat exchanger, doing a thermal or pressure-vessel check, or applying ASME codes.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Mechanical Engineering

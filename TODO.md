@@ -84,7 +84,12 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
 
 ## 1. Repository infrastructure
 
-* [x] **1.1** — Repository created, MIT licensed
+* [x] **1.1** — Repository created under the MIT License; **relicensed to
+  CC BY-ND 4.0 on 2026-09-19** (commit `a113589`). Revisions before that
+  commit remain available under MIT and are not withdrawn.
+* [x] **1.1a** — Propagate the relicence to every surface that names the
+  licence: `LICENSE` licensor notice, `license:` frontmatter in all nine
+  `SKILL.md`, `README.md`, `PROJECT_INDEX.md`. **Done 2026-09-19.**
 * [x] **1.2** — `REFERENCES.md` citation catalog with verification-status legend
 * [x] **1.3** — `AGENTS.md` authoritative agent instructions + `CLAUDE.md` stub
 * [x] **1.4** — `README.md` with discipline table and honest alignment exceptions
@@ -231,9 +236,11 @@ trigger evals.
 * [x] **3.2a** — Canonical qualified-review notice defined in `AGENTS.md` and
   implemented in `aeronautical-engineering`
 * [~] **3.2b** — Propagate the byte-identical notice into every skill as it is
-  authored, verified by CI. **8 of 11 done** (aeronautical, mechanical,
-  statics-and-dynamics, control-systems, naval-architecture-marine,
-  thermodynamics, electrical-engineering, electronics-engineering).
+  authored, verified by CI. **9 of 9 authored skills done, 12 planned**
+  (aeronautical, mechanical, statics-and-dynamics, control-systems,
+  naval-architecture-marine, thermodynamics, electrical-engineering,
+  electronics-engineering, computer-engineering — all nine copies confirmed
+  byte-identical 2026-09-19). Remaining three land with §2.5, §2.9, §2.10.
   *(gates 4.2)*
 * [ ] **3.2** — Consistent "report a result" block across all ten skills
 * [ ] **3.3** — Cross-discipline handoff guidance (e.g. aeronautical → materials

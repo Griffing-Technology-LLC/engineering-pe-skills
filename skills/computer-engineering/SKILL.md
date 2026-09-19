@@ -1,7 +1,7 @@
 ---
 name: computer-engineering
 description: Computer engineering aligned to the NCEES PE Electrical and Computer (Computer Engineering) exam — number and data representation, error detection and correction, processor and memory architecture, embedded systems and microcontroller interfacing, real-time scheduling and interrupts, firmware and boot, digital logic and timing analysis, ADC/DAC and signalling standards, computer networks, system cybersecurity, and software verification and validation. Use when choosing a number format or checking overflow, sizing a CRC or ECC scheme, estimating CPI/speed-up or cache performance, checking real-time schedulability or interrupt latency, designing or timing a synchronous digital circuit, resolving metastability or clock-domain crossing, selecting a bus or signalling standard (CAN, LVDS, Ethernet), specifying a secure boot or firmware-update chain, laying out a network or threat model for an embedded product, or building a V&V/test plan for safety-critical software.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Electrical and Computer Engineering (Computer Engineering)

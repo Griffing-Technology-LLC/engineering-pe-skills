@@ -1,7 +1,7 @@
 ---
 name: aeronautical-engineering
 description: Aeronautical and aerospace engineering analysis with authoritative citations — airfoil and wing aerodynamics, lift/drag/moment build-up, propeller and EDF thrust, weight and balance, CG and static margin, V-n envelopes, and airframe load factors. Use when sizing a wing, computing lift or drag, analysing an airfoil or aerofoil section, checking CG or static margin, building a V-n diagram, sizing a propeller or ducted fan, doing a weight-and-balance or mass-properties roll-up, or evaluating a UAS or light aircraft airframe against FAA Part 23/107, NASA, or ASTM F38 standards.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Aeronautical Engineering
