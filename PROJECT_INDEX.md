@@ -10,6 +10,7 @@ engineering-pe-skills/
 ├── PROJECT_INDEX.md                   This file
 ├── README.md                          Overview, discipline table, install
 ├── REFERENCES.md                      Citation catalog with verification status
+├── REVIEW_LOG.md                      Per-skill licensed-PE review record (§4.1)
 ├── TODO.md                            Work Breakdown Structure
 ├── .markdownlint-cli2.jsonc           Lint config (MD013 tuned for tables/code)
 ├── .github/notice.txt                 Canonical review notice (CI diff target)

@@ -72,7 +72,7 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
   editions both appear in bookseller listings). *(REF-NFPA-001, REF-NFPA-002;
   `electrical-engineering` currently cites NEC topics without article numbers
   and flags 70E's current edition as unconfirmed)*
-* [ ] **0.9** — Read the full text of the three foundational papers catalogued
+* [ ] **0.11** — Read the full text of the three foundational papers catalogued
   as `VERIFIED (BLOCKED)` for `computer-engineering` and confirm that the
   results attributed to them appear as stated: Amdahl 1967 speed-up formula
   (REF-PAPER-001), Liu & Layland 1973 rate-monotonic bound
@@ -233,7 +233,7 @@ trigger evals.
     layering, IP/TCP/Ethernet, network design and test, software design and
     fundamentals, NIST CSF 2.0 / SP 800-160 / SP 800-82 / SP 800-193 /
     FIPS 140-3 security practice, QA, IEEE 1012-2024 V&V
-  * [ ] 2.12.6 §0.9 open (paper full texts) — does not block the skill's
+  * [ ] 2.12.6 §0.11 open (paper full texts) — does not block the skill's
     method content, which is presented as standard material
   * [ ] 2.12.7 Trigger evals
 
@@ -267,8 +267,44 @@ trigger evals.
   not an engineering service, not a sealed/certified/reviewed work product.
   Confirm that wording, and that a PE-owned LLC publishing engineer-reviewed
   reference material creates no practice-act exposure in its state.
-* [ ] **4.1** — Licensed PE review of every skill's technical content
+* [ ] **4.1** — Licensed PE review of every skill's technical content,
+  **per discipline and per commit**. One reviewer cannot close this for
+  disciplines outside their licensure; the README demands of users a reviewer
+  qualified "for the jurisdiction and discipline" and this gate must meet the
+  same bar. Each sub-item closes only when `REVIEW_LOG.md` records the
+  reviewer's GitHub username, licence discipline and state, and the reviewed
+  commit hash, and the skill's `metadata.review_status` is updated. Any later
+  edit to that skill's technical content reopens its sub-item.
+  * [ ] 4.1.1 `aeronautical-engineering` — PE Mechanical or an equivalently
+    qualified aerospace authority (no NCEES aeronautical PE exists; see
+    README "Two honest exceptions")
+  * [ ] 4.1.2 `mechanical-engineering` — PE Mechanical
+  * [ ] 4.1.3 `statics-and-dynamics` — any PE whose exam specification
+    includes statics/dynamics (FE-level content; Mechanical or Civil
+    Structural preferred)
+  * [ ] 4.1.4 `thermodynamics` — PE Mechanical (Thermal & Fluid Systems) or
+    PE Chemical
+  * [ ] 4.1.5 `control-systems-engineering` — PE Control Systems
+  * [ ] 4.1.6 `chemical-engineering` — PE Chemical *(skill not yet
+    authored, §2.5)*
+  * [ ] 4.1.7 `electrical-engineering` — PE Electrical and Computer: Power
+  * [ ] 4.1.8 `electronics-engineering` — PE Electrical and Computer:
+    Electronics, Controls, and Communications
+  * [ ] 4.1.9 `computer-engineering` — PE Electrical and Computer: Computer
+    Engineering
+  * [ ] 4.1.10 `naval-architecture-marine` — PE Naval Architecture and
+    Marine
+  * [ ] 4.1.11 `fire-protection-engineering` — PE Fire Protection *(skill
+    not yet authored, §2.9)*
+  * [ ] 4.1.12 `materials-and-additive-manufacturing` — PE Metallurgical and
+    Materials *(skill not yet authored, §2.10)*
 * [ ] **4.2** — Verify all §0 items closed
-* [ ] **4.3** — Register on skills.sh; confirm install path resolves
+* [ ] **4.3** — Register on skills.sh; confirm install path resolves. The
+  README install line uses the `owner/repo@skill` form; the skills CLI
+  documents `--skill <name>` for `add` in at least some versions — confirm
+  against the live CLI and correct the README. Gated on §4.0, §4.1, §4.2.
+  "Publication" in §0 and §4 means this registration **and** removal of the
+  `UNREVIEWED DRAFT` marker; public visibility of the repository is not
+  publication.
 * [ ] **4.4** — Announce with an explicit statement of what the skills do **not**
   do: they inform engineering judgment, they do not replace a licensed engineer
