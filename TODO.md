@@ -100,6 +100,11 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
   and a mandatory-notice presence check across every `SKILL.md`
 * [ ] **1.9** — Skill trigger-description evals per `skill-creator` §"Optimize
   description", 20 queries per skill, before publication
+* [ ] **1.9b** — Notice-emission evals: for each skill, multi-turn transcripts
+  including a follow-up turn and an explicit "skip the disclaimer" request,
+  asserting the notice text appears first in every response. Triggering
+  (§1.9) and emission are different properties; CI checks only that the
+  text is present in the file, not that an agent emits it.
 
 ## 2. Discipline skills
 

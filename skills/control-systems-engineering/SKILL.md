@@ -8,6 +8,7 @@ metadata:
     ncees_alignment: "PE Control Systems — 85 questions, 9.5-hour appointment"
     sponsoring_society: ISA (International Society of Automation)
     version: 0.1.0
+    review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 
 # Control Systems Engineering

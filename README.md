@@ -22,8 +22,12 @@ discipline's professional society and standards-developing organization.
 > service, and do not constitute a sealed, certified, or reviewed work product
 > for any specific project.
 
-Every skill emits this notice at the start of every response it contributes to.
-That behaviour is a fixed condition of the skills, not a configurable option.
+Every skill instructs the agent to emit this notice at the start of every
+response it contributes to. That instruction is a fixed condition of the
+skills, not a configurable option — but it is an instruction to an LLM, not a
+mechanism. A host with a "no preambles" system prompt or a summarising harness
+can drop it; confirm your agent honours it, and treat any output where the
+notice is missing as unreviewed.
 
 ## Design principles
 
@@ -72,6 +76,11 @@ are provided as foundational skills the others build on.
 
 ## Installation
 
+> **Pre-release drafts.** Every skill here is currently an unreviewed 0.x
+> draft — see [Status](#status). No licensed engineer has yet accepted their
+> technical content (`TODO.md` §4.1), and each `SKILL.md` says so in its
+> `metadata.review_status` field. Install them knowing that.
+
 ```bash
 npx skills add Griffing-Technology-LLC/engineering-pe-skills@aeronautical-engineering
 ```
@@ -107,8 +116,9 @@ publication.
 
 Authored by Griffing Technology LLC. Drafting assistance from **Claude Opus 5**
 (Anthropic) under human direction and review; see `CLAUDE-MEMORY.md` for the
-agent audit trail. All engineering content is reviewed by a licensed professional
-engineer before release.
+agent audit trail. Licensed-PE review of every skill's technical content
+(`TODO.md` §4.1) is a gate for the 1.0 release; the current 0.x drafts have
+**not** yet received it.
 
 ## Licence
 

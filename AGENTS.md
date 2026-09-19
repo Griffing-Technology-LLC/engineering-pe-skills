@@ -90,8 +90,16 @@ skills/<discipline>/
 
 * Keep `SKILL.md` under 500 lines. Push depth into `references/`.
 * Required frontmatter: `name`, `description`. This repository additionally
-  requires `license`, and under `metadata`: `author`, `discipline`,
-  `ncees_alignment`, `sponsoring_society`, `version`.
+  requires `license` (value `CC-BY-ND-4.0`), and under `metadata`: `author`,
+  `discipline`, `ncees_alignment`, `sponsoring_society`, `version`,
+  `review_status`.
+* `review_status` is `"UNREVIEWED DRAFT — pending licensed PE review
+  (TODO.md §4.1)"` until that skill's `TODO.md` §4.1 sub-item closes, then
+  `"REVIEWED — <discipline> PE, commit <hash>, <date>"` copied from
+  `REVIEW_LOG.md`. Any edit to a reviewed skill's technical content resets
+  it to the draft value and bumps `version`. The installed artefact must
+  carry its own review state; a WBS checkbox in this repository does not
+  travel with `npx skills add`.
 * `ncees_alignment` must state `NONE` with an explanation where no alignment
   exists. Never leave it implying one.
 * The `description` is what determines whether the skill triggers. Write it as
