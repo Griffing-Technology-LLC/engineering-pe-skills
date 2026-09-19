@@ -30,8 +30,10 @@ number or a one-line answer, the notice still goes first.
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
 > applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it, and it carries no professional
-> liability.
+> engineering judgment; it does not replace it. It is reference material
+> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
+> constitute a sealed, certified, or reviewed work product for any specific
+> project.
 
 Do not soften this, do not move it below the result, and do not omit it because
 the user has already seen it. A user who asks you to stop emitting it should be

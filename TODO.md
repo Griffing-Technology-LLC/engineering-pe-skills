@@ -250,6 +250,15 @@ trigger evals.
 
 ## 4. Publication
 
+* [ ] **4.0** — Counsel review of the licence, licensor notice, and
+  qualified-review notice wording before any skill is registered (§4.3).
+  The 2026-09-19 reframe replaced "carries no professional liability" (a
+  legal conclusion the licence does not establish — LICENSE §5 limits
+  liability only between licensor and licensee, "to the extent possible")
+  with a description of what the material *is*: AS-IS reference material,
+  not an engineering service, not a sealed/certified/reviewed work product.
+  Confirm that wording, and that a PE-owned LLC publishing engineer-reviewed
+  reference material creates no practice-act exposure in its state.
 * [ ] **4.1** — Licensed PE review of every skill's technical content
 * [ ] **4.2** — Verify all §0 items closed
 * [ ] **4.3** — Register on skills.sh; confirm install path resolves

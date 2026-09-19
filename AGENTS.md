@@ -41,8 +41,10 @@ immediately after its title, containing this canonical wording:
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
 > applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it, and it carries no professional
-> liability.
+> engineering judgment; it does not replace it. It is reference material
+> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
+> constitute a sealed, certified, or reviewed work product for any specific
+> project.
 
 Rules for the notice:
 
@@ -62,7 +64,9 @@ Rationale: these skills produce structural, electrical, thermal, control, and
 fire-protection results that a reader may act on. In every discipline this
 repository covers, acting on unreviewed analysis is how people get hurt. The
 notice is also the boundary of what this repository claims — it informs
-engineering judgment and carries no professional liability.
+engineering judgment; it is not an engineering service and is not a sealed,
+certified, or reviewed work product for any specific project. Wording that
+touches liability is reviewed by counsel before publication (`TODO.md` §4.0).
 
 ## Engineering standards
 

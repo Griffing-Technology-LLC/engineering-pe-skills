@@ -17,8 +17,10 @@ discipline's professional society and standards-developing organization.
 > accepted by a properly qualified individual** — a licensed Professional Engineer
 > or an equivalently qualified authority for the jurisdiction and discipline —
 > **before it is applied to any system carrying risk to life or safety.** These
-> skills inform engineering judgment; they do not replace it, and they carry no
-> professional liability.
+> skills inform engineering judgment; they do not replace it. They are
+> reference material provided AS-IS (see LICENSE §5), are not an engineering
+> service, and do not constitute a sealed, certified, or reviewed work product
+> for any specific project.
 
 Every skill emits this notice at the start of every response it contributes to.
 That behaviour is a fixed condition of the skills, not a configurable option.
