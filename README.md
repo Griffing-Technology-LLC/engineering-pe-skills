@@ -132,11 +132,23 @@ CC BY-ND 4.0,
 
 ### Why no-derivatives
 
-Each skill's safety case rests on its reviewed, cited content. A modified
-skill is no longer the reviewed artefact, but still emits the same
-qualified-review notice — so it would carry this repository's name and
-verification claims on content nobody here has checked. The licence therefore
-permits use and unmodified redistribution but not sharing of modified versions.
+Each skill's safety case rests on its reviewed, cited content. Where a
+licensed engineer has put their licence on a skill (`REVIEW_LOG.md`), the
+wording *is* the reviewed work: a modified skill is no longer that work, but
+would still emit the same notices — carrying the reviewer's name and this
+repository's verification claims on content nobody has checked. The licence
+therefore permits use and unmodified redistribution but not sharing of
+modified versions.
+
+### Reviewed skills carry a second notice
+
+A skill whose `metadata.review_status` begins `REVIEWED` emits, every turn
+after the general notice, a **licensed-engineer attestation** in the
+reviewer's name (canonical text in `AGENTS.md`). It states that the content
+was verified against the standards of practice, that its wording is fixed,
+that the reviewer's acceptance covers the skill's content only and carries no
+liability for work done with it, and that such work still needs its own
+qualified-engineer sign-off. Currently: `control-systems-engineering`.
 
 ### Licence scope — what CC BY-ND 4.0 does and does not do
 

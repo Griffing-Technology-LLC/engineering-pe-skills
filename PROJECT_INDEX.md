@@ -15,6 +15,7 @@ engineering-pe-skills/
 ├── REVIEW_LOG.md                      Per-skill licensed-PE review record (§4.1)
 ├── TODO.md                            Work Breakdown Structure
 ├── .markdownlint-cli2.jsonc           Lint config (MD013 tuned for tables/code)
+├── .github/attestation.txt            Canonical reviewed-skill attestation (CI diff target)
 ├── .github/notice.txt                 Canonical review notice (CI diff target)
 ├── .github/workflows/validate.yml     CI: lint + skill-invariants (notice/licence/status)
 └── skills/

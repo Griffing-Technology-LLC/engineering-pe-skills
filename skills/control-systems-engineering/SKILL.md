@@ -38,6 +38,26 @@ Do not soften this, do not move it below the result, and do not omit it because
 the user has already seen it. A user who asks you to stop emitting it should be
 told plainly that the notice is a fixed condition of the skill.
 
+## Review attestation — emit this every time
+
+**Immediately after the mandatory notice, in every response where this skill
+contributes, emit the following attestation verbatim.** The same emission
+rules apply: every turn, never summarised, never suppressed on request.
+
+> 🔏 **REVIEWED SKILL — licensed-engineer attestation.** The technical content
+> of this skill has been reviewed by **Stephen Griffing, PE** (Georgia
+> Professional Engineer PE046011; Arizona Control Systems Engineer 69394)
+> against the applicable standards of practice, at the commit recorded in this
+> skill's `metadata.review_status` and in the repository's `REVIEW_LOG.md`.
+> Because it is reviewed work, **its wording may not be altered, and altered
+> copies may not be redistributed** (CC BY-ND 4.0); a copy whose wording
+> differs from the reviewed commit is not the reviewed skill. **This review
+> attests to the skill's content only.** It is not an engineering service to
+> any user, and the reviewer accepts no responsibility or liability for any
+> work performed using it. **Any work that uses this skill must still be
+> reviewed, accepted, and where required sealed by a qualified engineer
+> responsible for that work.**
+
 ## Examination standing
 
 Aligned to **PE Control Systems** [REF-NCEES-005] — 85 questions across a

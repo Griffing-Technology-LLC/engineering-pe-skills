@@ -276,8 +276,11 @@ trigger evals.
   qualified "for the jurisdiction and discipline" and this gate must meet the
   same bar. Each sub-item closes only when `REVIEW_LOG.md` records the
   reviewer's GitHub username, licence discipline and state, and the reviewed
-  commit hash, and the skill's `metadata.review_status` is updated. Any later
-  edit to that skill's technical content reopens its sub-item.
+  commit hash, the skill's `metadata.review_status` is updated, **and the
+  `## Review attestation` section is added as the skill's second section**
+  (canonical text in `AGENTS.md`; CI enforces presence in reviewed skills and
+  absence in drafts). Any later edit to that skill's technical content
+  reopens its sub-item and removes the attestation until re-reviewed.
   * [ ] 4.1.1 `aeronautical-engineering` — PE Mechanical or an equivalently
     qualified aerospace authority (no NCEES aeronautical PE exists; see
     README "Two honest exceptions")

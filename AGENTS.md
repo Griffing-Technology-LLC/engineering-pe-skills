@@ -70,6 +70,51 @@ engineering judgment; it is not an engineering service and is not a sealed,
 certified, or reviewed work product for any specific project. Wording that
 touches liability is reviewed by counsel before publication (`TODO.md` §4.0).
 
+## Reviewed-skill attestation
+
+A skill whose technical content a licensed engineer has reviewed and accepted
+(`REVIEW_LOG.md`; `metadata.review_status` beginning `REVIEWED`) carries a
+**second** notice, emitted every turn immediately after the mandatory notice.
+It conveys three things the general notice cannot: that a named licensed PE
+has verified the content against the standards of practice; that, because it
+is reviewed work, its wording is fixed (the reason for the no-derivatives
+licence); and that the reviewer's acceptance covers the skill's content only —
+work done with the skill still needs its own qualified-engineer sign-off, and
+the reviewer accepts no liability for it.
+
+Each reviewed `SKILL.md` carries a `## Review attestation — emit this every
+time` section immediately after the mandatory-notice section, containing this
+canonical wording:
+
+> 🔏 **REVIEWED SKILL — licensed-engineer attestation.** The technical content
+> of this skill has been reviewed by **Stephen Griffing, PE** (Georgia
+> Professional Engineer PE046011; Arizona Control Systems Engineer 69394)
+> against the applicable standards of practice, at the commit recorded in this
+> skill's `metadata.review_status` and in the repository's `REVIEW_LOG.md`.
+> Because it is reviewed work, **its wording may not be altered, and altered
+> copies may not be redistributed** (CC BY-ND 4.0); a copy whose wording
+> differs from the reviewed commit is not the reviewed skill. **This review
+> attests to the skill's content only.** It is not an engineering service to
+> any user, and the reviewer accepts no responsibility or liability for any
+> work performed using it. **Any work that uses this skill must still be
+> reviewed, accepted, and where required sealed by a qualified engineer
+> responsible for that work.**
+
+Rules for the attestation:
+
+* **Only in reviewed skills.** A skill still marked `UNREVIEWED DRAFT` must
+  not carry it; CI fails either mismatch.
+* **Verbatim and byte-identical** across every reviewed skill, mirrored in
+  `.github/attestation.txt`, which CI diffs against this section and against
+  each reviewed skill. Change the wording here first.
+* **Second, not first.** The mandatory notice still leads; the attestation
+  follows it, then the analysis.
+* **Same emission rules** as the mandatory notice: every turn, never
+  summarised, never suppressed on request.
+* Adding a reviewer, or a reviewer's licence changing, is a wording change:
+  update here, in `.github/attestation.txt`, and in every reviewed skill in
+  one commit, and record it in `CHANGELOG.md`.
+
 ## Engineering standards
 
 * **Units:** imperial-primary, metric in parentheses — `10 in (254 mm)`,

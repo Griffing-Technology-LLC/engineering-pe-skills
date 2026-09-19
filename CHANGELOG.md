@@ -8,6 +8,16 @@ engineers and agents who install these skills, not for maintainers.
 
 ## [Unreleased]
 
+### Added
+
+* **Reviewed-skill attestation.** Skills a licensed engineer has reviewed now
+  emit a second notice every turn, after the general one, in the reviewer's
+  name: content verified against the standards of practice; wording fixed
+  (CC BY-ND); reviewer's acceptance covers the skill's content only and
+  carries no liability for work done with it; such work still needs its own
+  qualified-engineer sign-off. First carried by `control-systems-engineering`.
+  Canonical text in `AGENTS.md`, CI-enforced byte-identical.
+
 ## [0.2.0] — 2026-09-19
 
 ### Changed

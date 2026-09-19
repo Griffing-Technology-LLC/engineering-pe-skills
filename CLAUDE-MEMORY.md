@@ -29,3 +29,9 @@ wrote it.
   PE046011 (multidisciplinary), AZ CSE 69394 (Control Systems only).
   `control-systems-engineering` reviewed and `ACCEPTED` at `435c241` on
   2026-09-19; the other eight remain `UNREVIEWED DRAFT`.
+* Reviewed skills carry a SECOND canonical block, `## Review attestation`,
+  in Steve's name (GA PE046011, AZ CSE 69394): verified against standards
+  of practice; wording fixed (hence ND); acceptance covers content only,
+  no liability for work done with it; that work still needs its own
+  qualified-engineer sign-off. Canonical in AGENTS.md → .github/attestation.txt
+  → CI byte-diff; present only where review_status begins REVIEWED.
