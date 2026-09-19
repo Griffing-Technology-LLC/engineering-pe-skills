@@ -72,7 +72,7 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
   editions both appear in bookseller listings). *(REF-NFPA-001, REF-NFPA-002;
   `electrical-engineering` currently cites NEC topics without article numbers
   and flags 70E's current edition as unconfirmed)*
-* [ ] **0.9** — Read the full text of the three foundational papers catalogued
+* [ ] **0.11** — Read the full text of the three foundational papers catalogued
   as `VERIFIED (BLOCKED)` for `computer-engineering` and confirm that the
   results attributed to them appear as stated: Amdahl 1967 speed-up formula
   (REF-PAPER-001), Liu & Layland 1973 rate-monotonic bound
@@ -84,17 +84,31 @@ this section.** Each corresponds to a `REQUIRES VERIFICATION` entry in
 
 ## 1. Repository infrastructure
 
-* [x] **1.1** — Repository created, MIT licensed
+* [x] **1.1** — Repository created under the MIT License; **relicensed to
+  CC BY-ND 4.0 on 2026-09-19** (commit `a113589`). Revisions before that
+  commit remain available under MIT and are not withdrawn.
+* [x] **1.1a** — Propagate the relicence to every surface that names the
+  licence: `LICENSE` licensor notice, `license:` frontmatter in all nine
+  `SKILL.md`, `README.md`, `PROJECT_INDEX.md`. **Done 2026-09-19.**
 * [x] **1.2** — `REFERENCES.md` citation catalog with verification-status legend
 * [x] **1.3** — `AGENTS.md` authoritative agent instructions + `CLAUDE.md` stub
 * [x] **1.4** — `README.md` with discipline table and honest alignment exceptions
 * [x] **1.5** — `TODO.md` WBS
-* [ ] **1.6** — `PROJECT_INDEX.md` maintained as files are added
-* [ ] **1.7** — `CLAUDE-MEMORY.md` agent audit mirror
-* [ ] **1.8** — CI: markdownlint (all 60 rules) + link validation + secret scan
-  and a mandatory-notice presence check across every `SKILL.md`
+* [x] **1.6** — `PROJECT_INDEX.md` maintained as files are added (current
+  as of 2026-09-19; re-check on every file add/archive)
+* [x] **1.7** — `CLAUDE-MEMORY.md` agent audit mirror — created 2026-09-19
+* [~] **1.8** — CI gates. **Done 2026-09-19:** markdownlint (all rules);
+  skill-invariants job — notice byte-identical to `.github/notice.txt`
+  (which is itself diffed against `AGENTS.md`), `ncees_alignment`,
+  `license: CC-BY-ND-4.0`, `review_status` present. **Open:** link
+  validation, secret scan.
 * [ ] **1.9** — Skill trigger-description evals per `skill-creator` §"Optimize
   description", 20 queries per skill, before publication
+* [ ] **1.9b** — Notice-emission evals: for each skill, multi-turn transcripts
+  including a follow-up turn and an explicit "skip the disclaimer" request,
+  asserting the notice text appears first in every response. Triggering
+  (§1.9) and emission are different properties; CI checks only that the
+  text is present in the file, not that an agent emits it.
 
 ## 2. Discipline skills
 
@@ -220,7 +234,7 @@ trigger evals.
     layering, IP/TCP/Ethernet, network design and test, software design and
     fundamentals, NIST CSF 2.0 / SP 800-160 / SP 800-82 / SP 800-193 /
     FIPS 140-3 security practice, QA, IEEE 1012-2024 V&V
-  * [ ] 2.12.6 §0.9 open (paper full texts) — does not block the skill's
+  * [ ] 2.12.6 §0.11 open (paper full texts) — does not block the skill's
     method content, which is presented as standard material
   * [ ] 2.12.7 Trigger evals
 
@@ -231,9 +245,11 @@ trigger evals.
 * [x] **3.2a** — Canonical qualified-review notice defined in `AGENTS.md` and
   implemented in `aeronautical-engineering`
 * [~] **3.2b** — Propagate the byte-identical notice into every skill as it is
-  authored, verified by CI. **8 of 11 done** (aeronautical, mechanical,
-  statics-and-dynamics, control-systems, naval-architecture-marine,
-  thermodynamics, electrical-engineering, electronics-engineering).
+  authored, verified by CI. **9 of 9 authored skills done, 12 planned**
+  (aeronautical, mechanical, statics-and-dynamics, control-systems,
+  naval-architecture-marine, thermodynamics, electrical-engineering,
+  electronics-engineering, computer-engineering — all nine copies confirmed
+  byte-identical 2026-09-19). Remaining three land with §2.5, §2.9, §2.10.
   *(gates 4.2)*
 * [ ] **3.2** — Consistent "report a result" block across all ten skills
 * [ ] **3.3** — Cross-discipline handoff guidance (e.g. aeronautical → materials
@@ -243,8 +259,60 @@ trigger evals.
 
 ## 4. Publication
 
-* [ ] **4.1** — Licensed PE review of every skill's technical content
+* [ ] **4.0** — Counsel review of the licence, licensor notice, and
+  qualified-review notice wording before any skill is registered (§4.3).
+  The 2026-09-19 reframe replaced "carries no professional liability" (a
+  legal conclusion the licence does not establish — LICENSE §5 limits
+  liability only between licensor and licensee, "to the extent possible")
+  with a description of what the material *is*: AS-IS reference material,
+  not an engineering service, not a sealed/certified/reviewed work product.
+  Confirm that wording, and that a PE-owned LLC publishing engineer-reviewed
+  reference material creates no practice-act exposure in its state.
+* [ ] **4.1** — Licensed PE review of every skill's technical content,
+  **per discipline and per commit**. Engineer of record: Stephen Griffing,
+  PE (`Stab-Rabbit-coding`; GA PE046011 multidisciplinary, AZ CSE 69394) —
+  see `REVIEW_LOG.md`. A reviewer closes only sub-items their licensure and
+  competence cover; the README demands of users a reviewer
+  qualified "for the jurisdiction and discipline" and this gate must meet the
+  same bar. Each sub-item closes only when `REVIEW_LOG.md` records the
+  reviewer's GitHub username, licence discipline and state, and the reviewed
+  commit hash, the skill's `metadata.review_status` is updated, **and the
+  `## Review attestation` section is added as the skill's second section**
+  (canonical text in `AGENTS.md`; CI enforces presence in reviewed skills and
+  absence in drafts). Any later edit to that skill's technical content
+  reopens its sub-item and removes the attestation until re-reviewed.
+  * [ ] 4.1.1 `aeronautical-engineering` — PE Mechanical or an equivalently
+    qualified aerospace authority (no NCEES aeronautical PE exists; see
+    README "Two honest exceptions")
+  * [ ] 4.1.2 `mechanical-engineering` — PE Mechanical
+  * [ ] 4.1.3 `statics-and-dynamics` — any PE whose exam specification
+    includes statics/dynamics (FE-level content; Mechanical or Civil
+    Structural preferred)
+  * [ ] 4.1.4 `thermodynamics` — PE Mechanical (Thermal & Fluid Systems) or
+    PE Chemical
+  * [x] 4.1.5 `control-systems-engineering` — PE Control Systems.
+    **Reviewed 2026-09-19** by `Stab-Rabbit-coding` (AZ CSE 69394; GA
+    PE046011), technical content at `435c241`, `ACCEPTED` — `REVIEW_LOG.md`.
+  * [ ] 4.1.6 `chemical-engineering` — PE Chemical *(skill not yet
+    authored, §2.5)*
+  * [ ] 4.1.7 `electrical-engineering` — PE Electrical and Computer: Power
+  * [ ] 4.1.8 `electronics-engineering` — PE Electrical and Computer:
+    Electronics, Controls, and Communications
+  * [ ] 4.1.9 `computer-engineering` — PE Electrical and Computer: Computer
+    Engineering
+  * [ ] 4.1.10 `naval-architecture-marine` — PE Naval Architecture and
+    Marine
+  * [ ] 4.1.11 `fire-protection-engineering` — PE Fire Protection *(skill
+    not yet authored, §2.9)*
+  * [ ] 4.1.12 `materials-and-additive-manufacturing` — PE Metallurgical and
+    Materials *(skill not yet authored, §2.10)*
 * [ ] **4.2** — Verify all §0 items closed
-* [ ] **4.3** — Register on skills.sh; confirm install path resolves
+* [ ] **4.3** — Register on skills.sh; confirm install path resolves. The
+  README install line uses the `owner/repo@skill` form; the skills CLI
+  documents `--skill <name>` for `add` in at least some versions — confirm
+  against the live CLI and correct the README. Gated on §4.0, §4.1, §4.2.
+  "Publication" in §0 and §4 means this registration **and** removal of the
+  `UNREVIEWED DRAFT` marker; public visibility of the repository is not
+  publication.
 * [ ] **4.4** — Announce with an explicit statement of what the skills do **not**
   do: they inform engineering judgment, they do not replace a licensed engineer

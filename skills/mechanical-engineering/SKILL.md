@@ -1,13 +1,14 @@
 ---
 name: mechanical-engineering
 description: Mechanical engineering design and analysis aligned to the NCEES PE Mechanical exam — machine design, stress and fatigue, shafts, bearings, gears, fasteners and bolted joints, springs, thermodynamic cycles, heat transfer, fluid systems and pumps, and HVAC. Use when sizing a shaft or bearing, checking a bolted joint or weld, computing stress concentration or fatigue life, selecting a gear or belt drive, sizing a pump or duct, analysing a thermodynamic cycle or heat exchanger, doing a thermal or pressure-vessel check, or applying ASME codes.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Mechanical Engineering
     ncees_alignment: "PE Mechanical — three modules: HVAC and Refrigeration; Machine Design and Materials; Thermal and Fluid Systems"
     sponsoring_society: ASME (American Society of Mechanical Engineers)
-    version: 0.1.0
+    version: 0.2.0
+    review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 
 # Mechanical Engineering
@@ -28,8 +29,10 @@ number or a one-line answer, the notice still goes first.
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
 > applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it, and it carries no professional
-> liability.
+> engineering judgment; it does not replace it. It is reference material
+> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
+> constitute a sealed, certified, or reviewed work product for any specific
+> project.
 
 Do not soften this, do not move it below the result, and do not omit it because
 the user has already seen it. A user who asks you to stop emitting it should be

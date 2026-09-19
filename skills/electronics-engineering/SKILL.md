@@ -1,13 +1,14 @@
 ---
 name: electronics-engineering
 description: Electronics engineering aligned to the NCEES PE Electrical and Computer — Electronics, Controls, and Communications module — signal integrity and transmission-line analysis, EMC/EMI emissions and immunity, analog and digital circuit design, ADC/DAC and data-conversion basics, and board-level power regulation. Use when analyzing transmission-line reflections or termination, estimating crosstalk or an eye diagram, assessing EMC emissions/immunity or FCC Part 15 applicability, designing or reviewing an analog or digital circuit (amplifiers, filters, logic families), selecting an ADC/DAC, or sizing board-level power regulation. Not for power-system, protection, or arc-flash work — see `electrical-engineering` for that.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Electronics Engineering
     ncees_alignment: "PE Electrical and Computer — Electronics, Controls, and Communications module: 85 questions, 9.5-hour appointment [REF-NCEES-004]"
     sponsoring_society: IEEE (Institute of Electrical and Electronics Engineers)
-    version: 0.1.0
+    version: 0.2.0
+    review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 
 # Electronics Engineering
@@ -30,8 +31,10 @@ number or a one-line answer, the notice still goes first.
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
 > applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it, and it carries no professional
-> liability.
+> engineering judgment; it does not replace it. It is reference material
+> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
+> constitute a sealed, certified, or reviewed work product for any specific
+> project.
 
 Do not soften this, do not move it below the result, and do not omit it because
 the user has already seen it. A user who asks you to stop emitting it should be

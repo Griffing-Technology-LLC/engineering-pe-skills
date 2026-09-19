@@ -1,13 +1,14 @@
 ---
 name: computer-engineering
 description: Computer engineering aligned to the NCEES PE Electrical and Computer (Computer Engineering) exam — number and data representation, error detection and correction, processor and memory architecture, embedded systems and microcontroller interfacing, real-time scheduling and interrupts, firmware and boot, digital logic and timing analysis, ADC/DAC and signalling standards, computer networks, system cybersecurity, and software verification and validation. Use when choosing a number format or checking overflow, sizing a CRC or ECC scheme, estimating CPI/speed-up or cache performance, checking real-time schedulability or interrupt latency, designing or timing a synchronous digital circuit, resolving metastability or clock-domain crossing, selecting a bus or signalling standard (CAN, LVDS, Ethernet), specifying a secure boot or firmware-update chain, laying out a network or threat model for an embedded product, or building a V&V/test plan for safety-critical software.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Electrical and Computer Engineering (Computer Engineering)
     ncees_alignment: "PE Electrical and Computer — Computer Engineering module: 85 questions, 9.5-hour appointment [REF-NCEES-004]"
     sponsoring_society: IEEE (Institute of Electrical and Electronics Engineers)
-    version: 0.1.0
+    version: 0.2.0
+    review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 
 # Computer Engineering
@@ -30,8 +31,10 @@ number or a one-line answer, the notice still goes first.
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
 > applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it, and it carries no professional
-> liability.
+> engineering judgment; it does not replace it. It is reference material
+> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
+> constitute a sealed, certified, or reviewed work product for any specific
+> project.
 
 Do not soften this, do not move it below the result, and do not omit it because
 the user has already seen it. A user who asks you to stop emitting it should be
@@ -66,7 +69,7 @@ Electronics, Controls, and Communications module belongs to
 signal integrity at the PCB level, and EMC belong there, not here.
 
 The principal SDO is **IEEE** [REF-SOC-005]. Standards verified directly for
-this skill: **IEEE 754-2019** floating-point arithmetic [REF-IEEE-002],
+this skill: **IEEE 754-2019** floating-point arithmetic [REF-IEEE-006],
 **IEEE 802.3-2022** Ethernet [REF-IEEE-003], **IEEE 1149.1-2013** boundary
 scan [REF-IEEE-004], and **IEEE 1012-2024** system/software/hardware V&V
 [REF-IEEE-005]. Internet protocols are cited to the IETF RFC Editor

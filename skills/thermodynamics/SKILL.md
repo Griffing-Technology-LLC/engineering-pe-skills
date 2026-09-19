@@ -1,13 +1,14 @@
 ---
 name: thermodynamics
 description: Thermodynamics, heat transfer, and fluid mechanics at FE level — properties of pure substances, first and second law, entropy, power and refrigeration cycles, conduction/convection/radiation heat transfer, fluid statics, continuity and the energy equation, dimensional analysis, and internal pipe flow. Use when computing cycle efficiency or COP, sizing a heat exchanger by LMTD or NTU, finding conductive or convective heat loss, applying Bernoulli's equation or the energy equation, computing head loss in a pipe, finding a Reynolds or Froude number, or working any FE-level thermal-fluid problem that feeds mechanical, chemical, aeronautical, naval architecture, or fire protection design.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Thermodynamics, Heat Transfer, and Fluid Mechanics (engineering thermal-fluid sciences)
     ncees_alignment: "FE-LEVEL — not a PE discipline on its own. Thermodynamics, heat transfer, and fluid mechanics are Fundamentals of Engineering subject matter that reappears across multiple PE specifications. See 'Examination standing' below."
     sponsoring_society: "None — foundational thermal-fluid sciences; NCEES FE Reference Handbook is the governing reference"
-    version: 0.1.0
+    version: 0.2.0
+    review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 
 # Thermodynamics, Heat Transfer, and Fluid Mechanics
@@ -30,8 +31,10 @@ number or a one-line answer, the notice still goes first.
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
 > applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it, and it carries no professional
-> liability.
+> engineering judgment; it does not replace it. It is reference material
+> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
+> constitute a sealed, certified, or reviewed work product for any specific
+> project.
 
 Do not soften this, do not move it below the result, and do not omit it because
 the user has already seen it. A user who asks you to stop emitting it should be

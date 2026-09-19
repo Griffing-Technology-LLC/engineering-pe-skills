@@ -17,11 +17,17 @@ discipline's professional society and standards-developing organization.
 > accepted by a properly qualified individual** — a licensed Professional Engineer
 > or an equivalently qualified authority for the jurisdiction and discipline —
 > **before it is applied to any system carrying risk to life or safety.** These
-> skills inform engineering judgment; they do not replace it, and they carry no
-> professional liability.
+> skills inform engineering judgment; they do not replace it. They are
+> reference material provided AS-IS (see LICENSE §5), are not an engineering
+> service, and do not constitute a sealed, certified, or reviewed work product
+> for any specific project.
 
-Every skill emits this notice at the start of every response it contributes to.
-That behaviour is a fixed condition of the skills, not a configurable option.
+Every skill instructs the agent to emit this notice at the start of every
+response it contributes to. That instruction is a fixed condition of the
+skills, not a configurable option — but it is an instruction to an LLM, not a
+mechanism. A host with a "no preambles" system prompt or a summarising harness
+can drop it; confirm your agent honours it, and treat any output where the
+notice is missing as unreviewed.
 
 ## Design principles
 
@@ -70,6 +76,12 @@ are provided as foundational skills the others build on.
 
 ## Installation
 
+> **Pre-release drafts.** Eight of the nine skills here are unreviewed 0.x
+> drafts — see [Status](#status); only `control-systems-engineering` has had
+> its technical content accepted by a licensed engineer (`TODO.md` §4.1,
+> `REVIEW_LOG.md`). Each `SKILL.md` states its own state in
+> `metadata.review_status`. Install them knowing that.
+
 ```bash
 npx skills add Griffing-Technology-LLC/engineering-pe-skills@aeronautical-engineering
 ```
@@ -90,21 +102,73 @@ structure and current completion state.
 | `aeronautical-engineering` | Draft — SKILL.md + 4 reference files |
 | `mechanical-engineering` | Draft — SKILL.md + 3 reference files |
 | `statics-and-dynamics` | Draft — SKILL.md + 3 reference files |
-| `control-systems-engineering` | Draft — SKILL.md + 3 reference files |
+| `control-systems-engineering` | **Reviewed** — PE Control Systems, 2026-09-19 (`REVIEW_LOG.md`) |
 | `naval-architecture-marine` | Draft — SKILL.md + 2 reference files |
 | `thermodynamics` | Draft — SKILL.md + 3 reference files |
 | `electrical-engineering` | Draft — SKILL.md + 3 reference files |
+| `electronics-engineering` | Draft — SKILL.md + 2 reference files |
 | `computer-engineering` | Draft — SKILL.md + 4 reference files |
-| remaining four | Not started |
+| remaining three | Not started |
 
-All eight drafts are pending licensed PE review (`TODO.md` §4.1) before
-publication.
+Eight of the nine drafts are pending licensed PE review (`TODO.md` §4.1)
+before publication; `control-systems-engineering` has received it.
 
 ## Attribution
 
 Authored by Griffing Technology LLC. Drafting assistance from **Claude Opus 5**
 (Anthropic) under human direction and review; see `CLAUDE-MEMORY.md` for the
-agent audit trail. All engineering content is reviewed by a licensed professional
-engineer before release.
+agent audit trail. Engineer of record: Stephen Griffing, PE
+(`Stab-Rabbit-coding`) — see `REVIEW_LOG.md`. Licensed-PE review of every
+skill's technical content (`TODO.md` §4.1) is a gate for the 1.0 release;
+as of 2026-09-19 only `control-systems-engineering` has received it.
 
-Licensed [MIT](LICENSE).
+## Licence
+
+Engineering PE Skills © 2026 Griffing Technology LLC, licensed
+[CC BY-ND 4.0](LICENSE) — Creative Commons Attribution-NoDerivatives 4.0
+International. Attribution: *"Engineering PE Skills, Griffing Technology LLC,
+CC BY-ND 4.0,
+<https://github.com/Griffing-Technology-LLC/engineering-pe-skills>"*.
+
+### Why no-derivatives
+
+Each skill's safety case rests on its reviewed, cited content. Where a
+licensed engineer has put their licence on a skill (`REVIEW_LOG.md`), the
+wording *is* the reviewed work: a modified skill is no longer that work, but
+would still emit the same notices — carrying the reviewer's name and this
+repository's verification claims on content nobody has checked. The licence
+therefore permits use and unmodified redistribution but not sharing of
+modified versions.
+
+### Reviewed skills carry a second notice
+
+A skill whose `metadata.review_status` begins `REVIEWED` emits, every turn
+after the general notice, a **licensed-engineer attestation** in the
+reviewer's name (canonical text in `AGENTS.md`). It states that the content
+was verified against the standards of practice, that its wording is fixed,
+that the reviewer's acceptance covers the skill's content only and carries no
+liability for work done with it, and that such work still needs its own
+qualified-engineer sign-off. Currently: `control-systems-engineering`.
+
+### Licence scope — what CC BY-ND 4.0 does and does not do
+
+* **You may** copy, redistribute, and install these skills unmodified, and
+  adapt them for your own private use (LICENSE §2(a)(1)).
+* **You may not** publicly distribute a modified version (LICENSE §2(a)(1)(b),
+  §3(a)(1)). Send corrections upstream instead — see
+  [`SECURITY.md`](SECURITY.md).
+* **A locally modified copy is no longer the reviewed artefact.** It inherits
+  none of this repository's citation-verification or engineer-review claims.
+  If the mandatory notice is missing from a copy, treat its output as
+  unreviewed.
+* **Your own work is yours.** Analyses, calculations, reports, and designs
+  you produce *using* these skills are not Licensed Material or Adapted
+  Material under this licence; share them freely, subject to the
+  qualified-review requirement above. Reproducing the review notice in such
+  output is expressly permitted without further attribution.
+* **The licence does not enforce the review requirement.** CC BY-ND governs
+  copying; it neither substitutes for nor compels the qualified engineering
+  review described above, which applies to any use, modified or not.
+* **Not retroactive.** Revisions through commit `5300e0e` were published under
+  the MIT License and that grant is not withdrawn for copies already obtained;
+  CC BY-ND 4.0 applies from commit `a113589` (2026-09-19) onward.

@@ -1,13 +1,14 @@
 ---
 name: control-systems-engineering
 description: Control systems engineering aligned to the NCEES PE Control Systems exam — PID tuning, loop dynamics, transfer functions, stability and frequency response, process instrumentation and P&IDs, final control elements, safety instrumented systems and SIL, and industrial control security. Use when tuning or diagnosing a control loop, building a transfer function or block diagram, checking stability or phase and gain margin, sizing a control valve or selecting a sensor, reading or drafting a P&ID, doing a SIL or LOPA assessment, or designing a feedback controller for a physical plant.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Control Systems Engineering
     ncees_alignment: "PE Control Systems — 85 questions, 9.5-hour appointment"
     sponsoring_society: ISA (International Society of Automation)
-    version: 0.1.0
+    version: 0.2.0
+    review_status: "REVIEWED — PE Control Systems (AZ CSE 69394; GA PE046011), commit 435c241, 2026-09-19; see REVIEW_LOG.md"
 ---
 
 # Control Systems Engineering
@@ -28,12 +29,34 @@ number or a one-line answer, the notice still goes first.
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
 > applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it, and it carries no professional
-> liability.
+> engineering judgment; it does not replace it. It is reference material
+> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
+> constitute a sealed, certified, or reviewed work product for any specific
+> project.
 
 Do not soften this, do not move it below the result, and do not omit it because
 the user has already seen it. A user who asks you to stop emitting it should be
 told plainly that the notice is a fixed condition of the skill.
+
+## Review attestation — emit this every time
+
+**Immediately after the mandatory notice, in every response where this skill
+contributes, emit the following attestation verbatim.** The same emission
+rules apply: every turn, never summarised, never suppressed on request.
+
+> 🔏 **REVIEWED SKILL — licensed-engineer attestation.** The technical content
+> of this skill has been reviewed by **Stephen Griffing, PE** (Georgia
+> Professional Engineer PE046011; Arizona Control Systems Engineer 69394)
+> against the applicable standards of practice, at the commit recorded in this
+> skill's `metadata.review_status` and in the repository's `REVIEW_LOG.md`.
+> Because it is reviewed work, **its wording may not be altered, and altered
+> copies may not be redistributed** (CC BY-ND 4.0); a copy whose wording
+> differs from the reviewed commit is not the reviewed skill. **This review
+> attests to the skill's content only.** It is not an engineering service to
+> any user, and the reviewer accepts no responsibility or liability for any
+> work performed using it. **Any work that uses this skill must still be
+> reviewed, accepted, and where required sealed by a qualified engineer
+> responsible for that work.**
 
 ## Examination standing
 

@@ -1,13 +1,14 @@
 ---
 name: naval-architecture-marine
 description: Naval architecture and marine engineering — ship hydrostatics, intact stability (GZ curve, metacentric height, IMO weather criterion), trim and freeboard, hull resistance and powering, and propeller/propulsion coefficients. Use when computing displacement or buoyancy, finding the metacentric height or righting arm, checking IMO intact stability criteria, analysing trim or list, estimating hull resistance from Froude or Reynolds number, applying the ITTC-57 friction line, or sizing propulsion power for a vessel.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Naval Architecture and Marine Engineering
     ncees_alignment: "PE Naval Architecture and Marine Engineering — 85 questions, 9.5-hour appointment [REF-NCEES-008]. NCEES's exam landing page does not publish a named module breakdown the way PE Mechanical does; see 'Examination standing' below."
     sponsoring_society: SNAME (Society of Naval Architects and Marine Engineers)
-    version: 0.1.0
+    version: 0.2.0
+    review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 
 # Naval Architecture and Marine Engineering
@@ -29,8 +30,10 @@ number or a one-line answer, the notice still goes first.
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
 > applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it, and it carries no professional
-> liability.
+> engineering judgment; it does not replace it. It is reference material
+> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
+> constitute a sealed, certified, or reviewed work product for any specific
+> project.
 
 Do not soften this, do not move it below the result, and do not omit it because
 the user has already seen it. A user who asks you to stop emitting it should be

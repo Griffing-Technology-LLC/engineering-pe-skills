@@ -3,7 +3,7 @@
 Reference file for the `computer-engineering` skill, covering NCEES knowledge
 area 1 (data representation: number and character representation,
 encoding/decoding, error detection and correction, compression)
-[REF-NCEES-004]. Floating point is cited to IEEE 754-2019 [REF-IEEE-002];
+[REF-NCEES-004]. Floating point is cited to IEEE 754-2019 [REF-IEEE-006];
 error-correcting codes to Hamming (1950) [REF-PAPER-003], whose full text was
 not read here — see the caution in §4.
 
@@ -40,7 +40,7 @@ unless the two happen to match.
 
 ## 2. Floating point — IEEE 754-2019
 
-IEEE 754-2019 [REF-IEEE-002] "specifies interchange and arithmetic formats
+IEEE 754-2019 [REF-IEEE-006] "specifies interchange and arithmetic formats
 and methods for binary and decimal floating-point arithmetic" and "exception
 conditions and their default handling." Binary interchange formats consist
 of a sign bit, a biased exponent field, and a trailing significand field;

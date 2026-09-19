@@ -41,8 +41,10 @@ immediately after its title, containing this canonical wording:
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
 > applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it, and it carries no professional
-> liability.
+> engineering judgment; it does not replace it. It is reference material
+> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
+> constitute a sealed, certified, or reviewed work product for any specific
+> project.
 
 Rules for the notice:
 
@@ -56,13 +58,62 @@ Rules for the notice:
   fixed condition of the skill.
 * Because skills install independently, the text is **duplicated in full** in
   each `SKILL.md` rather than referenced from a shared file. Keep the copies
-  byte-identical.
+  byte-identical: CI diffs each skill's blockquote against
+  `.github/notice.txt`, and diffs that file against this section, so a
+  change to the wording is made here first and then propagated everywhere.
 
 Rationale: these skills produce structural, electrical, thermal, control, and
 fire-protection results that a reader may act on. In every discipline this
 repository covers, acting on unreviewed analysis is how people get hurt. The
 notice is also the boundary of what this repository claims — it informs
-engineering judgment and carries no professional liability.
+engineering judgment; it is not an engineering service and is not a sealed,
+certified, or reviewed work product for any specific project. Wording that
+touches liability is reviewed by counsel before publication (`TODO.md` §4.0).
+
+## Reviewed-skill attestation
+
+A skill whose technical content a licensed engineer has reviewed and accepted
+(`REVIEW_LOG.md`; `metadata.review_status` beginning `REVIEWED`) carries a
+**second** notice, emitted every turn immediately after the mandatory notice.
+It conveys three things the general notice cannot: that a named licensed PE
+has verified the content against the standards of practice; that, because it
+is reviewed work, its wording is fixed (the reason for the no-derivatives
+licence); and that the reviewer's acceptance covers the skill's content only —
+work done with the skill still needs its own qualified-engineer sign-off, and
+the reviewer accepts no liability for it.
+
+Each reviewed `SKILL.md` carries a `## Review attestation — emit this every
+time` section immediately after the mandatory-notice section, containing this
+canonical wording:
+
+> 🔏 **REVIEWED SKILL — licensed-engineer attestation.** The technical content
+> of this skill has been reviewed by **Stephen Griffing, PE** (Georgia
+> Professional Engineer PE046011; Arizona Control Systems Engineer 69394)
+> against the applicable standards of practice, at the commit recorded in this
+> skill's `metadata.review_status` and in the repository's `REVIEW_LOG.md`.
+> Because it is reviewed work, **its wording may not be altered, and altered
+> copies may not be redistributed** (CC BY-ND 4.0); a copy whose wording
+> differs from the reviewed commit is not the reviewed skill. **This review
+> attests to the skill's content only.** It is not an engineering service to
+> any user, and the reviewer accepts no responsibility or liability for any
+> work performed using it. **Any work that uses this skill must still be
+> reviewed, accepted, and where required sealed by a qualified engineer
+> responsible for that work.**
+
+Rules for the attestation:
+
+* **Only in reviewed skills.** A skill still marked `UNREVIEWED DRAFT` must
+  not carry it; CI fails either mismatch.
+* **Verbatim and byte-identical** across every reviewed skill, mirrored in
+  `.github/attestation.txt`, which CI diffs against this section and against
+  each reviewed skill. Change the wording here first.
+* **Second, not first.** The mandatory notice still leads; the attestation
+  follows it, then the analysis.
+* **Same emission rules** as the mandatory notice: every turn, never
+  summarised, never suppressed on request.
+* Adding a reviewer, or a reviewer's licence changing, is a wording change:
+  update here, in `.github/attestation.txt`, and in every reviewed skill in
+  one commit, and record it in `CHANGELOG.md`.
 
 ## Engineering standards
 
@@ -86,8 +137,16 @@ skills/<discipline>/
 
 * Keep `SKILL.md` under 500 lines. Push depth into `references/`.
 * Required frontmatter: `name`, `description`. This repository additionally
-  requires `license`, and under `metadata`: `author`, `discipline`,
-  `ncees_alignment`, `sponsoring_society`, `version`.
+  requires `license` (value `CC-BY-ND-4.0`), and under `metadata`: `author`,
+  `discipline`, `ncees_alignment`, `sponsoring_society`, `version`,
+  `review_status`.
+* `review_status` is `"UNREVIEWED DRAFT — pending licensed PE review
+  (TODO.md §4.1)"` until that skill's `TODO.md` §4.1 sub-item closes, then
+  `"REVIEWED — <discipline> PE, commit <hash>, <date>"` copied from
+  `REVIEW_LOG.md`. Any edit to a reviewed skill's technical content resets
+  it to the draft value and bumps `version`. The installed artefact must
+  carry its own review state; a WBS checkbox in this repository does not
+  travel with `npx skills add`.
 * `ncees_alignment` must state `NONE` with an explanation where no alignment
   exists. Never leave it implying one.
 * The `description` is what determines whether the skill triggers. Write it as
@@ -99,7 +158,11 @@ skills/<discipline>/
 * 4-space indentation in all code regardless of language.
 * Verbose commenting, in each language's idiom.
 * Static analysis before any commit.
-* All PRs pass CI lint and security checks before merge.
+* All PRs pass CI before merge. Today CI runs markdownlint (all rules) and
+  the skill-invariants job (`.github/workflows/validate.yml`: notice
+  byte-identical to `.github/notice.txt`, `ncees_alignment`, `license`,
+  `review_status`). Link validation and secret scanning are **not yet
+  wired** — `TODO.md` §1.8.
 
 ## Maintenance
 

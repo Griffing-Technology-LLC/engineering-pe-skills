@@ -1,13 +1,14 @@
 ---
 name: aeronautical-engineering
 description: Aeronautical and aerospace engineering analysis with authoritative citations — airfoil and wing aerodynamics, lift/drag/moment build-up, propeller and EDF thrust, weight and balance, CG and static margin, V-n envelopes, and airframe load factors. Use when sizing a wing, computing lift or drag, analysing an airfoil or aerofoil section, checking CG or static margin, building a V-n diagram, sizing a propeller or ducted fan, doing a weight-and-balance or mass-properties roll-up, or evaluating a UAS or light aircraft airframe against FAA Part 23/107, NASA, or ASTM F38 standards.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Aeronautical Engineering
     ncees_alignment: "NONE — no NCEES PE discipline exists for aeronautical engineering. See 'Licensure standing' below."
     sponsoring_society: AIAA (American Institute of Aeronautics and Astronautics)
-    version: 0.1.0
+    version: 0.2.0
+    review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 
 # Aeronautical Engineering
@@ -28,8 +29,10 @@ number or a one-line answer, the notice still goes first.
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
 > applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it, and it carries no professional
-> liability.
+> engineering judgment; it does not replace it. It is reference material
+> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
+> constitute a sealed, certified, or reviewed work product for any specific
+> project.
 
 Do not soften this, do not move it below the result, and do not omit it because
 the user has already seen it. A user who asks you to stop emitting it should be

@@ -1,13 +1,14 @@
 ---
 name: statics-and-dynamics
 description: Statics and rigid-body dynamics at FE level — free-body diagrams, equilibrium, trusses and frames, centroids and moments of inertia, friction, kinematics, Newton-Euler and work-energy methods, impulse-momentum, and vibration. Use when resolving forces or reactions, drawing a free-body diagram, analysing a truss or beam support, finding a centroid or second moment of area, checking a friction or tipping condition, computing acceleration of a linkage or mechanism, sizing for an inertial load, or working any equilibrium or rigid-body motion problem.
-license: MIT
+license: CC-BY-ND-4.0
 metadata:
     author: Griffing Technology LLC
     discipline: Statics and Dynamics (engineering mechanics)
     ncees_alignment: "FE-LEVEL — not a PE discipline. Statics and dynamics are Fundamentals of Engineering subject matter appearing across several PE specifications. See 'Examination standing' below."
     sponsoring_society: "None — foundational engineering mechanics; NCEES FE Reference Handbook is the governing reference"
-    version: 0.1.0
+    version: 0.2.0
+    review_status: "UNREVIEWED DRAFT — pending licensed PE review (TODO.md §4.1)"
 ---
 
 # Statics and Dynamics
@@ -29,8 +30,10 @@ number or a one-line answer, the notice still goes first.
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
 > applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it, and it carries no professional
-> liability.
+> engineering judgment; it does not replace it. It is reference material
+> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
+> constitute a sealed, certified, or reviewed work product for any specific
+> project.
 
 Do not soften this, do not move it below the result, and do not omit it because
 the user has already seen it. A user who asks you to stop emitting it should be
