@@ -76,10 +76,11 @@ are provided as foundational skills the others build on.
 
 ## Installation
 
-> **Pre-release drafts.** Every skill here is currently an unreviewed 0.x
-> draft — see [Status](#status). No licensed engineer has yet accepted their
-> technical content (`TODO.md` §4.1), and each `SKILL.md` says so in its
-> `metadata.review_status` field. Install them knowing that.
+> **Pre-release drafts.** Eight of the nine skills here are unreviewed 0.x
+> drafts — see [Status](#status); only `control-systems-engineering` has had
+> its technical content accepted by a licensed engineer (`TODO.md` §4.1,
+> `REVIEW_LOG.md`). Each `SKILL.md` states its own state in
+> `metadata.review_status`. Install them knowing that.
 
 ```bash
 npx skills add Griffing-Technology-LLC/engineering-pe-skills@aeronautical-engineering
@@ -101,7 +102,7 @@ structure and current completion state.
 | `aeronautical-engineering` | Draft — SKILL.md + 4 reference files |
 | `mechanical-engineering` | Draft — SKILL.md + 3 reference files |
 | `statics-and-dynamics` | Draft — SKILL.md + 3 reference files |
-| `control-systems-engineering` | Draft — SKILL.md + 3 reference files |
+| `control-systems-engineering` | **Reviewed** — PE Control Systems, 2026-09-19 (`REVIEW_LOG.md`) |
 | `naval-architecture-marine` | Draft — SKILL.md + 2 reference files |
 | `thermodynamics` | Draft — SKILL.md + 3 reference files |
 | `electrical-engineering` | Draft — SKILL.md + 3 reference files |
@@ -109,16 +110,17 @@ structure and current completion state.
 | `computer-engineering` | Draft — SKILL.md + 4 reference files |
 | remaining three | Not started |
 
-All nine drafts are pending licensed PE review (`TODO.md` §4.1) before
-publication.
+Eight of the nine drafts are pending licensed PE review (`TODO.md` §4.1)
+before publication; `control-systems-engineering` has received it.
 
 ## Attribution
 
 Authored by Griffing Technology LLC. Drafting assistance from **Claude Opus 5**
 (Anthropic) under human direction and review; see `CLAUDE-MEMORY.md` for the
-agent audit trail. Licensed-PE review of every skill's technical content
-(`TODO.md` §4.1) is a gate for the 1.0 release; the current 0.x drafts have
-**not** yet received it.
+agent audit trail. Engineer of record: Stephen Griffing, PE
+(`Stab-Rabbit-coding`) — see `REVIEW_LOG.md`. Licensed-PE review of every
+skill's technical content (`TODO.md` §4.1) is a gate for the 1.0 release;
+as of 2026-09-19 only `control-systems-engineering` has received it.
 
 ## Licence
 

@@ -269,8 +269,10 @@ trigger evals.
   Confirm that wording, and that a PE-owned LLC publishing engineer-reviewed
   reference material creates no practice-act exposure in its state.
 * [ ] **4.1** — Licensed PE review of every skill's technical content,
-  **per discipline and per commit**. One reviewer cannot close this for
-  disciplines outside their licensure; the README demands of users a reviewer
+  **per discipline and per commit**. Engineer of record: Stephen Griffing,
+  PE (`Stab-Rabbit-coding`; GA PE046011 multidisciplinary, AZ CSE 69394) —
+  see `REVIEW_LOG.md`. A reviewer closes only sub-items their licensure and
+  competence cover; the README demands of users a reviewer
   qualified "for the jurisdiction and discipline" and this gate must meet the
   same bar. Each sub-item closes only when `REVIEW_LOG.md` records the
   reviewer's GitHub username, licence discipline and state, and the reviewed
@@ -285,7 +287,9 @@ trigger evals.
     Structural preferred)
   * [ ] 4.1.4 `thermodynamics` — PE Mechanical (Thermal & Fluid Systems) or
     PE Chemical
-  * [ ] 4.1.5 `control-systems-engineering` — PE Control Systems
+  * [x] 4.1.5 `control-systems-engineering` — PE Control Systems.
+    **Reviewed 2026-09-19** by `Stab-Rabbit-coding` (AZ CSE 69394; GA
+    PE046011), technical content at `435c241`, `ACCEPTED` — `REVIEW_LOG.md`.
   * [ ] 4.1.6 `chemical-engineering` — PE Chemical *(skill not yet
     authored, §2.5)*
   * [ ] 4.1.7 `electrical-engineering` — PE Electrical and Computer: Power

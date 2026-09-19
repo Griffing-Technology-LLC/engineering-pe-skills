@@ -26,7 +26,9 @@ engineers and agents who install these skills, not for maintainers.
   `metadata.review_status`; all nine are `UNREVIEWED DRAFT` pending licensed
   PE review (`TODO.md` §4.1, per discipline, recorded in `REVIEW_LOG.md`).
 * README no longer states that PE review happens before release; it is a gate
-  for 1.0 and has not yet occurred.
+  for 1.0. As of 2026-09-19 `control-systems-engineering` is the one skill
+  whose technical content has been accepted by a licensed engineer (PE
+  Control Systems; see `REVIEW_LOG.md`); its `review_status` is `REVIEWED`.
 
 ### Fixed
 

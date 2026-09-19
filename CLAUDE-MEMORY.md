@@ -25,3 +25,7 @@ wrote it.
   holds a PE(CSE) and cannot close sub-items outside that discipline alone.
 * Counsel review of licence/notice wording (`TODO.md` §4.0) gates skills.sh
   registration.
+* Engineer of record: Stephen Griffing, PE (`Stab-Rabbit-coding`) — GA
+  PE046011 (multidisciplinary), AZ CSE 69394 (Control Systems only).
+  `control-systems-engineering` reviewed and `ACCEPTED` at `435c241` on
+  2026-09-19; the other eight remain `UNREVIEWED DRAFT`.

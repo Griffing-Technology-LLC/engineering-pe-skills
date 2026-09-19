@@ -9,9 +9,27 @@ Reviewers are identified by GitHub username. Licence discipline and state are
 recorded so that the reviewer's qualification for the discipline is auditable,
 not assumed.
 
+## Engineer of record
+
+**Stephen Griffing, PE** — GitHub `Stab-Rabbit-coding`.
+
+* Georgia Professional Engineer licence **PE046011** (multidisciplinary).
+* Arizona Control Systems Engineer licence **69394** (Control Systems only).
+
+The engineer of record decides, per skill, whether their licensure and
+competence cover that discipline; where it does not, the §4.1 sub-item stays
+open until a reviewer licensed in that discipline is recorded here.
+
+## Reviews
+
 | Date | Skill | Reviewed commit | Reviewer (GitHub) | PE discipline / state | Outcome |
 | --- | --- | --- | --- | --- | --- |
-| — | — | — | — | — | *No reviews recorded yet. All skills are `UNREVIEWED DRAFT`.* |
+| 2026-09-19 | `control-systems-engineering` | `435c241` | `Stab-Rabbit-coding` | Control Systems — AZ 69394; GA PE046011 | `ACCEPTED` |
+
+`435c241` is the last commit that changed the skill's technical content
+(`SKILL.md` body and `references/`). Later commits on the relicence branch
+altered only the licence field, the mandatory-notice wording, `version`, and
+`review_status` — not the reviewed technical content.
 
 ## Outcome values
 
