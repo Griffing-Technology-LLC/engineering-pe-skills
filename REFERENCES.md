@@ -3,11 +3,9 @@
 Authoritative reference catalog for the `engineering-pe-skills` repository.
 
 Every specification, calculation method, and design rule asserted anywhere in
-this
-repository is traceable to an entry below.  Each entry carries a REF-ID, the
-full
-title of the source, a validated URL, the specific portion applied, and every
-repository location that cites it.
+this repository is traceable to an entry below. Each entry carries a REF-ID,
+the full title of the source, a validated URL, the specific portion applied,
+and every repository location that cites it.
 
 ## Verification status legend
 
@@ -570,7 +568,7 @@ All URLs checked 2026-08-29 unless noted otherwise.
 
 All URLs in this section checked 2026-09-17.
 
-### REF-IEEE-002 — IEEE 754-2019, Standard for Floating-Point Arithmetic
+### REF-IEEE-006 — IEEE 754-2019, Standard for Floating-Point Arithmetic
 
 * **Title:** *IEEE 754-2019 — IEEE Standard for Floating-Point Arithmetic*
   (supersedes IEEE 754-2008)
@@ -841,6 +839,12 @@ All URLs in this section checked 2026-09-17.
 ---
 
 ## Removed / Superseded Citations
+
+* **2026-09-19 — REF-ID collision corrected.** `REF-IEEE-002` had been
+  assigned twice: to IEEE/ANSI C63.4 (§3, `electronics-engineering`) and to
+  IEEE 754-2019 (§4, `computer-engineering`). IEEE 754-2019 is now
+  `REF-IEEE-006`; `REF-IEEE-002` remains C63.4. Both skill files that cited
+  754 were updated in the same commit. No content changed.
 
 **Corrected 2026-08-29 — factor of safety in 14 CFR Part 23.** An earlier draft
 of `references/loads-and-factors.md` marked the 1.5 airframe factor of safety

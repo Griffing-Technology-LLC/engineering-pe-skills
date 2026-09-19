@@ -69,7 +69,7 @@ Electronics, Controls, and Communications module belongs to
 signal integrity at the PCB level, and EMC belong there, not here.
 
 The principal SDO is **IEEE** [REF-SOC-005]. Standards verified directly for
-this skill: **IEEE 754-2019** floating-point arithmetic [REF-IEEE-002],
+this skill: **IEEE 754-2019** floating-point arithmetic [REF-IEEE-006],
 **IEEE 802.3-2022** Ethernet [REF-IEEE-003], **IEEE 1149.1-2013** boundary
 scan [REF-IEEE-004], and **IEEE 1012-2024** system/software/hardware V&V
 [REF-IEEE-005]. Internet protocols are cited to the IETF RFC Editor
