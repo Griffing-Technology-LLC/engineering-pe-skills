@@ -207,3 +207,13 @@ AI-authored alike.
   create a hazard to objects.
 * A call-out box labeled **NOTE** will accompany other items that need
   emphasis but do not present hazardous conditions.
+
+### Reference
+
+The shall/should/may definitions and the WARNING/CAUTION/NOTE call-out
+convention above follow CNAF M-3710.7, *NATOPS General Flight and
+Operating Instructions*, issued by Commander, Naval Air Forces (CNAF)
+(<https://www.secnav.navy.mil/doni/SECNAV%20Manuals1/3710.7%20(CNAF).pdf>).
+The will/could definitions and the active-voice/passive-voice
+distinction above are this project's own convention, not drawn from
+that source.
