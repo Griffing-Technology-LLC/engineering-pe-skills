@@ -33,23 +33,37 @@ of every response in which it participates.** This is a hard requirement of the
 repository, not a per-skill choice, and it is the first thing checked in review.
 
 Each `SKILL.md` carries a `## Mandatory notice — emit this every time` section
-immediately after its title, containing this canonical wording:
+immediately after its title, containing this canonical wording. Per the
+call-out rules below, the review requirement is a life/injury hazard and is
+rendered as a `[!WARNING]`; the AS-IS/no-liability scope caveat is an
+object/property hazard (unreviewed results reaching real equipment or
+hardware) and is rendered as a `[!CAUTION]`:
 
-> ⚠️ **ENGINEERING REVIEW REQUIRED — this output is not a substitute for a
+> [!WARNING]
+> **ENGINEERING REVIEW REQUIRED — this output is not a substitute for a
 > qualified engineer.** Every result, calculation, and recommendation produced
 > with this skill **must be independently reviewed and accepted by a properly
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
-> applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it. It is reference material
-> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
-> constitute a sealed, certified, or reviewed work product for any specific
-> project.
+> applied to any system carrying risk to life or safety.**
+
+<!-- -->
+
+> [!CAUTION]
+> **This skill informs engineering judgment; it does not replace it.** Applying
+> unreviewed results to real equipment or hardware — even where no life-safety
+> risk exists — carries a risk of equipment damage or property loss. It is
+> reference material provided AS-IS (see LICENSE §5), is not an engineering
+> service, and does not constitute a sealed, certified, or reviewed work
+> product for any specific project.
 
 Rules for the notice:
 
 * **Verbatim.** Do not reword it per discipline. Identical text across all ten
   skills is what makes it recognisable.
+* **Two alerts, in order.** The `[!WARNING]` always precedes the `[!CAUTION]`,
+  separated by an `<!-- -->` line so markdownlint does not read them as one
+  blockquote with a blank line inside it. Do not merge or reorder them.
 * **First, not last.** It precedes the analysis. A notice under a result reads as
   a disclaimer; a notice above one is a condition of use.
 * **Every turn.** It is not dropped on follow-ups within the same task, and not
