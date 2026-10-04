@@ -11,13 +11,20 @@ discipline's professional society and standards-developing organization.
 
 ## Qualified review is required
 
-> ⚠️ **ENGINEERING REVIEW REQUIRED — output from these skills is not a substitute
+> [!WARNING]
+> **ENGINEERING REVIEW REQUIRED — output from these skills is not a substitute
 > for a qualified engineer.** Every result, calculation, and recommendation
 > produced with any skill in this repository **must be independently reviewed and
 > accepted by a properly qualified individual** — a licensed Professional Engineer
 > or an equivalently qualified authority for the jurisdiction and discipline —
-> **before it is applied to any system carrying risk to life or safety.** These
-> skills inform engineering judgment; they do not replace it. They are
+> **before it is applied to any system carrying risk to life or safety.**
+
+<!-- -->
+
+> [!CAUTION]
+> **These skills inform engineering judgment; they do not replace it.** Applying
+> unreviewed results to real equipment or hardware — even where no life-safety
+> risk exists — carries a risk of equipment damage or property loss. They are
 > reference material provided AS-IS (see LICENSE §5), are not an engineering
 > service, and do not constitute a sealed, certified, or reviewed work product
 > for any specific project.
