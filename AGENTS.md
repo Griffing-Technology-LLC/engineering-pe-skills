@@ -141,6 +141,34 @@ Rules for the attestation:
 * **Every method states its validity envelope.**
 * **US jurisdiction** for all legal and regulatory content.
 
+## Warnings, cautions, notes, and wording
+
+Callout severity and requirement-verb usage follow CNAF M-3710.7 §1.5–1.6 (NATOPS General
+Flight and Operating Instructions Manual) [REF-MIL-001 §1.5, §1.6], adapted for a skills repo
+rather than a flight-ops manual:
+
+* **WARNING** — a procedure or condition that may result in injury, death, or loss of
+  equipment/asset if not carefully observed or followed. Reserve for genuine safety/loss risk.
+* **CAUTION** — a procedure or condition that may result in equipment or data damage, with no
+  injury or loss-of-asset risk.
+* **Note** — information that must be emphasized but carries no WARNING/CAUTION-level risk.
+
+Never downgrade a WARNING-level risk into a Note or use an ad hoc label ("IMPORTANT:",
+"ATTENTION:") in place of one of these three.
+
+Requirement wording, same source [REF-MIL-001 §1.6]:
+
+* **Shall** — mandatory.
+* **Should** — recommended, not mandatory.
+* **May** / **need not** — optional.
+* **Will** — futurity only; never a degree of requirement. Do not write "will" where "shall"
+  is meant.
+
+**Active vs. passive voice (project addition, not in CNAF M-3710.7):** write procedural text in
+the active voice ("Cite the section verbatim," not "The section shall be cited verbatim") except
+where shall/should/may/will wording above requires the passive construction to state the
+requirement itself.
+
 ## Skill authoring conventions
 
 ```text
