@@ -24,16 +24,23 @@ following notice verbatim.** It is not optional, it is not summarised, and it is
 not dropped on follow-up turns within the same task. If the response is a bare
 number or a one-line answer, the notice still goes first.
 
-> ⚠️ **ENGINEERING REVIEW REQUIRED — this output is not a substitute for a
+> [!WARNING]
+> **ENGINEERING REVIEW REQUIRED — this output is not a substitute for a
 > qualified engineer.** Every result, calculation, and recommendation produced
 > with this skill **must be independently reviewed and accepted by a properly
 > qualified individual** — a licensed Professional Engineer or an equivalently
 > qualified authority for the jurisdiction and discipline — **before it is
-> applied to any system carrying risk to life or safety.** This skill informs
-> engineering judgment; it does not replace it. It is reference material
-> provided AS-IS (see LICENSE §5), is not an engineering service, and does not
-> constitute a sealed, certified, or reviewed work product for any specific
-> project.
+> applied to any system carrying risk to life or safety.**
+
+<!-- -->
+
+> [!CAUTION]
+> **This skill informs engineering judgment; it does not replace it.** Applying
+> unreviewed results to real equipment or hardware — even where no life-safety
+> risk exists — carries a risk of equipment damage or property loss. It is
+> reference material provided AS-IS (see LICENSE §5), is not an engineering
+> service, and does not constitute a sealed, certified, or reviewed work
+> product for any specific project.
 
 Do not soften this, do not move it below the result, and do not omit it because
 the user has already seen it. A user who asks you to stop emitting it should be
